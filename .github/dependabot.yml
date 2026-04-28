@@ -1,7 +1,12 @@
 version: 2
+
 updates:
   - package-ecosystem: "gradle"
     directory: "/"
     schedule:
       interval: "daily"
-    open-pull-requests-limit: 5
+
+    allow:
+      - dependency-name: "com.googlecode.libphonenumber:libphonenumber"
+
+    open-pull-requests-limit: 1
