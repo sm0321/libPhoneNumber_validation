@@ -1,5 +1,8 @@
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.i18n.phonenumbers.NumberParseException;
+import com.google.i18n.phonenumbers.PhoneNumberUtil;
+import com.google.i18n.phonenumbers.Phonenumber;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
@@ -7,16 +10,17 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.util.*;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
 public class SnapshotTest {
 
     ObjectMapper mapper = new ObjectMapper();
+    PhoneNumberUtil util = PhoneNumberUtil.getInstance();
 
     @Test
-    void snapshot_and_diff_test() throws Exception {
+    void snapshot_test_with_libphonenumber() throws Exception {
 
-        // 1. golden dataset 로드 (classpath)
+        // =========================
+        // 1️⃣ dataset 로드
+        // =========================
         InputStream is = getClass()
                 .getClassLoader()
                 .getResourceAsStream("golden-dataset.json");
@@ -28,27 +32,60 @@ public class SnapshotTest {
         List<Map<String, String>> dataset =
                 mapper.readValue(is, new TypeReference<>() {});
 
-        // 2. current 결과 생성 (예: libphonenumber 결과)
-        List<Map<String, String>> current = dataset; // 실제로는 변환 로직 들어감
+        // =========================
+        // 2️⃣ libphonenumber 실행 결과 생성
+        // =========================
+        List<Map<String, String>> current = new ArrayList<>();
 
-        // 3. snapshot 디렉토리 준비
+        for (Map<String, String> row : dataset) {
+
+            Map<String, String> result = new LinkedHashMap<>(row);
+
+            String raw = row.get("phone");
+            String region = row.getOrDefault("country", "KR");
+
+            try {
+                Phonenumber.PhoneNumber number = util.parse(raw, region);
+
+                result.put("valid", String.valueOf(util.isValidNumber(number)));
+                result.put("e164", util.format(number, PhoneNumberUtil.PhoneNumberFormat.E164));
+                result.put("type", util.getNumberType(number).toString());
+
+            } catch (NumberParseException e) {
+                result.put("valid", "false");
+                result.put("error", e.getMessage());
+            }
+
+            current.add(result);
+        }
+
+        // =========================
+        // 3️⃣ snapshot 폴더 준비
+        // =========================
         File dir = new File("build/snapshot");
         if (!dir.exists()) dir.mkdirs();
 
-        File prevFile = new File("build/snapshot/snapshot-prev.json");
-        File currentFile = new File("build/snapshot/snapshot-current.json");
+        File prevFile = new File(dir, "snapshot-prev.json");
+        File currentFile = new File(dir, "snapshot-current.json");
+        File diffFile = new File(dir, "diff.json");
 
-        // 4. current 저장
+        // =========================
+        // 4️⃣ current 저장
+        // =========================
         mapper.writerWithDefaultPrettyPrinter().writeValue(currentFile, current);
 
-        // 5. 이전 snapshot 읽기
+        // =========================
+        // 5️⃣ previous 로드
+        // =========================
         List<Map<String, String>> previous = new ArrayList<>();
 
         if (prevFile.exists()) {
             previous = mapper.readValue(prevFile, new TypeReference<>() {});
         }
 
-        // 6. diff 계산 (국가 기준)
+        // =========================
+        // 6️⃣ diff 계산 (country 기준)
+        // =========================
         Set<String> prevCountries = new HashSet<>();
         for (Map<String, String> m : previous) {
             prevCountries.add(m.get("country"));
@@ -65,25 +102,34 @@ public class SnapshotTest {
         Set<String> removed = new HashSet<>(prevCountries);
         removed.removeAll(currCountries);
 
-        boolean changed = !added.isEmpty() || !removed.isEmpty();
+        Set<String> changed = new HashSet<>();
+        for (String c : currCountries) {
+            if (prevCountries.contains(c)) {
+                changed.add(c);
+            }
+        }
 
-        // 7. snapshot 갱신
+        // =========================
+        // 7️⃣ diff JSON 생성
+        // =========================
+        Map<String, Object> diff = new LinkedHashMap<>();
+        diff.put("added", added);
+        diff.put("removed", removed);
+        diff.put("changed", changed);
+        diff.put("total_current", current.size());
+        diff.put("total_previous", previous.size());
+
+        mapper.writerWithDefaultPrettyPrinter().writeValue(diffFile, diff);
+
+        // =========================
+        // 8️⃣ snapshot 업데이트
+        // =========================
         mapper.writerWithDefaultPrettyPrinter().writeValue(prevFile, current);
 
-        // 8. CI용 결과 export (GitHub Actions에서 읽을 수 있게)
-        Files.writeString(
-                new File("build/snapshot/diff.txt").toPath(),
-                "added=" + added + "\nremoved=" + removed
-        );
-
-        // 9. CI fail gate
-        assertTrue(true); // 기본 성공 (CI에서 조건 처리)
-
-        // (선택) 변경 있으면 로그
-        if (changed) {
-            System.out.println("CHANGED DETECTED");
-            System.out.println("added=" + added);
-            System.out.println("removed=" + removed);
-        }
+        // =========================
+        // 9️⃣ 로그 출력 (CI 디버깅용)
+        // =========================
+        System.out.println("=== SNAPSHOT DIFF ===");
+        System.out.println(diff);
     }
 }

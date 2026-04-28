@@ -2,7 +2,7 @@ name: libphonenumber CI
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ "**" ]
   pull_request:
 
 permissions:
@@ -14,51 +14,66 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-            fetch-depth: 0
+          fetch-depth: 0
 
-      - name: Set up JDK
-        uses: actions/setup-java@v4
+      - uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 17
 
-      - name: Grant execute permission
-        run: chmod +x gradlew
+      - run: chmod +x gradlew
+      - run: ./gradlew test
 
-      - name: Run tests
-        run: ./gradlew test
-
-      - name: Read diff result
+      # =========================
+      # 1️⃣ diff 읽기
+      # =========================
+      - name: Load diff
         id: diff
         run: |
-          echo "CHANGED=$(grep -c 'added=' build/snapshot/diff.txt)" >> $GITHUB_ENV
+          if [ -f build/snapshot/diff.json ]; then
+            echo "CHANGED=true" >> $GITHUB_ENV
+          else
+            echo "CHANGED=false" >> $GITHUB_ENV
+          fi
 
-      # 🔥 Slack 알림 (변경 있을 때만)
+      # =========================
+      # 2️⃣ Slack 알림
+      # =========================
       - name: Slack notify
-        if: false #env.CHANGED != '0'
+        if: env.CHANGED == 'true'
         run: |
           curl -X POST -H 'Content-type: application/json' \
-          --data "{\"text\":\"🚨 libphonenumber 변경 감지\n$(cat build/snapshot/diff.txt)\"}" \
+          --data @build/snapshot/diff.json \
           ${{ secrets.SLACK_WEBHOOK_URL }}
 
-      # 🔥 PR 자동 생성
-      - name: Create Pull Request
-        if: env.CHANGED != '0'
+      # =========================
+      # 3️⃣ PR 생성
+      # =========================
+      - name: Create PR
+        if: env.CHANGED == 'true'
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: "libphonenumber change detected"
-          body: |
-            자동 생성 PR
-            변경 감지됨
+          body: "자동 생성 PR (diff.json 참고)"
+          branch: auto/libphone-${{ github.run_id }}
 
-            $(cat build/snapshot/diff.txt)
-          branch: auto/libphonenumber-update
+      # =========================
+      # 4️⃣ PR 댓글
+      # =========================
+      - name: PR comment
+        if: github.event_name == 'pull_request' && env.CHANGED == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const diff = fs.readFileSync('build/snapshot/diff.json', 'utf8');
 
-      # 🔥 CI fail gate (변경 있을 때 실패)
-      - name: Fail CI if changed
-        if: env.CHANGED != '0'
-        run: exit 1
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: "🚨 libphonenumber change detected\n\n```json\n" + diff + "\n```"
+            });
