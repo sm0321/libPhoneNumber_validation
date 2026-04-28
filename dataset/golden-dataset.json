@@ -1,0 +1,9 @@
+[
+  {
+    "input": "01012345678",
+    "region": "KR",
+    "expectedValid": true,
+    "expectedType": "MOBILE",
+    "expectedE164": "+821012345678"
+  }
+]
