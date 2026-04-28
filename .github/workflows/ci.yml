@@ -57,18 +57,14 @@ jobs:
         if: env.CHANGED == 'true'
         uses: peter-evans/create-pull-request@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "chore: libphonenumber change detected"
           title: "🚨 libphonenumber change detected"
           body: |
             ## Snapshot Diff
-        
-            자동 생성된 변경입니다.
-        
+
             ```json
             $(cat build/snapshot/diff.json)
             ```
-          branch: auto/libphone-${{ github.run_id }}
           base: main
           delete-branch: true
 
