@@ -2,7 +2,7 @@ name: Phone Validation CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
   schedule:
     - cron: '0 2 * * 1'  # 매주 월요일 오전 11시 (한국시간 기준)
 
