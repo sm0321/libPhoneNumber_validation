@@ -1,40 +1,57 @@
-name: Phone Validation CI
+name: libphonenumber CI
 
 on:
   push:
-    branches: [ main, master ]
-  schedule:
-    - cron: '0 2 * * 1'  # 매주 월요일 오전 11시 (한국시간 기준)
+    branches: [ main ]
+  pull_request:
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 코드 체크아웃
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: JDK 설치
+      - name: Set up JDK
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 17
 
-      - name: 실행 권한 부여
+      - name: Grant execute permission
         run: chmod +x gradlew
 
-      - name: 테스트 실행
+      - name: Run tests
         run: ./gradlew test
 
-      - name: 변경 감지
+      - name: Read diff result
+        id: diff
         run: |
-          if grep -r "⚠️ CHANGE" .; then
-            echo "DIFF_FOUND=true" >> $GITHUB_ENV
-          fi
+          echo "CHANGED=$(grep -c 'added=' build/snapshot/diff.txt)" >> $GITHUB_ENV
 
-      - name: Slack 알림
-        if: false #env.DIFF_FOUND == 'true'
+      # 🔥 Slack 알림 (변경 있을 때만)
+      - name: Slack notify
+        if: false #env.CHANGED != '0'
         run: |
           curl -X POST -H 'Content-type: application/json' \
-          --data '{"text":"⚠️ libphonenumber validation changed!"}' \
+          --data "{\"text\":\"🚨 libphonenumber 변경 감지\n$(cat build/snapshot/diff.txt)\"}" \
           ${{ secrets.SLACK_WEBHOOK_URL }}
+
+      # 🔥 PR 자동 생성
+      - name: Create Pull Request
+        if: env.CHANGED != '0'
+        uses: peter-evans/create-pull-request@v5
+        with:
+          title: "libphonenumber change detected"
+          body: |
+            자동 생성 PR
+            변경 감지됨
+
+            $(cat build/snapshot/diff.txt)
+          branch: auto/libphonenumber-update
+
+      # 🔥 CI fail gate (변경 있을 때 실패)
+      - name: Fail CI if changed
+        if: env.CHANGED != '0'
+        run: exit 1
