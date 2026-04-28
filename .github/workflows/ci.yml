@@ -44,8 +44,10 @@ jobs:
       - name: Slack notify
         if: env.CHANGED == 'true'
         run: |
+          MESSAGE=$(cat build/snapshot/diff.json)
+          
           curl -X POST -H 'Content-type: application/json' \
-          --data @build/snapshot/diff.json \
+          --data "{\"text\":\"🚨 libphonenumber 변경 감지\n\n$MESSAGE\"}" \
           ${{ secrets.SLACK_WEBHOOK_URL }}
 
       # =========================
