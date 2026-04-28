@@ -33,7 +33,7 @@ jobs:
           fi
 
       - name: Slack 알림
-        if: env.DIFF_FOUND == 'true'
+        if: false #env.DIFF_FOUND == 'true'
         run: |
           curl -X POST -H 'Content-type: application/json' \
           --data '{"text":"⚠️ libphonenumber validation changed!"}' \
