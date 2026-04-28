@@ -22,9 +22,11 @@ public class SnapshotTest {
     void snapshotDiff() throws Exception {
 
         List<Map<String, String>> dataset =
-                mapper.readValue(new File("dataset/golden-dataset.json"),
-                        new TypeReference<>() {});
-
+                mapper.readValue(
+                        getClass().getClassLoader()
+                                .getResourceAsStream("golden-dataset.json"),
+                        new TypeReference<List<Map<String, String>>>() {}
+                );
         List<Result> current = new ArrayList<>();
 
         for (Map<String, String> tc : dataset) {
@@ -45,7 +47,9 @@ public class SnapshotTest {
             current.add(r);
         }
 
-        File prevFile = new File("dataset/snapshot-prev.json");
+        File dir = new File("build/snapshot");
+        if (!dir.exists()) dir.mkdirs();
+        File prevFile = new File("build/snapshot/snapshot-prev.json");
 
         if (!prevFile.exists()) {
             mapper.writeValue(prevFile, current);

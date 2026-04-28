@@ -24,9 +24,11 @@ public class GoldenTest {
     @Test
     void runTest() throws Exception {
         List<TestCase> dataset =
-                mapper.readValue(new File("dataset/golden-dataset.json"),
-                        new TypeReference<List<TestCase>>() {});
-
+                mapper.readValue(
+                        getClass().getClassLoader()
+                                .getResourceAsStream("golden-dataset.json"),
+                        new TypeReference<List<TestCase>>() {}
+                );
         for (TestCase tc : dataset) {
             Phonenumber.PhoneNumber num =
                     phoneUtil.parse(tc.input, tc.region);
