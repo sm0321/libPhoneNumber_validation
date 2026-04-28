@@ -15,6 +15,16 @@ public class SnapshotTest {
     ObjectMapper mapper = new ObjectMapper();
     PhoneNumberUtil util = PhoneNumberUtil.getInstance();
 
+    private void validateDataset(List<Map<String, String>> dataset) {
+        for (Map<String, String> row : dataset) {
+            if (row.get("input") == null) {
+                throw new RuntimeException("INVALID DATASET: phone is null");
+            }
+            if (row.get("expectedE164") == null) {
+                throw new RuntimeException("INVALID DATASET: country is null");
+            }
+        }
+    }
     @Test
     void snapshot_test_with_libphonenumber() throws Exception {
 
@@ -32,6 +42,8 @@ public class SnapshotTest {
         List<Map<String, String>> dataset =
                 mapper.readValue(is, new TypeReference<>() {});
 
+        // 🔥 2️⃣ 여기서 검증 먼저
+        validateDataset(dataset);
         // =========================
         // 2️⃣ libphonenumber 실행 결과 생성
         // =========================

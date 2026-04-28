@@ -58,9 +58,19 @@ jobs:
         uses: peter-evans/create-pull-request@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          title: "libphonenumber change detected"
-          body: "자동 생성 PR (diff.json 참고)"
+          commit-message: "chore: libphonenumber change detected"
+          title: "🚨 libphonenumber change detected"
+          body: |
+            ## Snapshot Diff
+        
+            자동 생성된 변경입니다.
+        
+            ```json
+            $(cat build/snapshot/diff.json)
+            ```
           branch: auto/libphone-${{ github.run_id }}
+          base: main
+          delete-branch: true
 
       # =========================
       # 4️⃣ PR 댓글
@@ -71,11 +81,17 @@ jobs:
         with:
           script: |
             const fs = require('fs');
-            const diff = fs.readFileSync('build/snapshot/diff.json', 'utf8');
 
-            github.rest.issues.createComment({
+            let diff;
+            try {
+              diff = fs.readFileSync('build/snapshot/diff.json', 'utf8');
+            } catch (e) {
+              diff = "diff.json not found";
+            }
+
+            await github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
-              body: "🚨 libphonenumber change detected\n\n```json\n" + diff + "\n```"
+              body: `🚨 libphonenumber change detected\n\n\`\`\`json\n${diff}\n\`\`\``
             });
