@@ -42,15 +42,61 @@ jobs:
       # =========================
       # 2️⃣ Slack 알림
       # =========================
-      - name: Slack notify
-        if: true #env.CHANGED == 'true'
+      - name: Slack notify (pretty)
+        if: env.CHANGED == 'true'
         run: |
-          MESSAGE=$(cat build/snapshot/diff.json)
-          
+          DIFF=$(jq -c . build/snapshot/diff.json)
+
+          PAYLOAD=$(jq -n \
+            --arg pr "${{ github.event.pull_request.html_url }}" \
+            --arg repo "${{ github.repository }}" \
+            --arg actor "${{ github.actor }}" \
+            --arg diff "$DIFF" \
+            '{
+              "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "📞 libphonenumber 변경 감지"
+                  }
+                },
+                {
+                  "type": "section",
+                  "fields": [
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Repository:*\n\($repo)"
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Author:*\n\($actor)"
+                    }
+                  ]
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Pull Request:*\n<\($pr)|바로가기>"
+                  }
+                },
+                {
+                  "type": "divider"
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*📊 변경 내용 (diff)*\n``` \($diff) ```"
+                  }
+                }
+              ]
+            }')
+
           curl -X POST ${{ secrets.SLACK_WEBHOOK_URL }} \
             -H 'Content-type: application/json' \
-            --data "{\"text\": \"📞 libphonenumber diff detected\n\`\`\`$MESSAGE\`\`\`\"}"
-
+            --data "$PAYLOAD"
       # =========================
       # 3️⃣ PR 생성
       # =========================
