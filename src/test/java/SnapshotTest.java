@@ -20,8 +20,8 @@ public class SnapshotTest {
             if (row.get("input") == null) {
                 throw new RuntimeException("INVALID DATASET: phone is null");
             }
-            if (row.get("expectedE164") == null) {
-                throw new RuntimeException("INVALID DATASET: country is null");
+            if (row.get("region") == null) {
+                throw new RuntimeException("INVALID DATASET: region is null");
             }
         }
     }

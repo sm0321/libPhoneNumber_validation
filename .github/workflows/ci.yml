@@ -43,7 +43,7 @@ jobs:
       # 2️⃣ Slack 알림
       # =========================
       - name: Slack notify
-        if: env.CHANGED == 'true'
+        if: true #env.CHANGED == 'true'
         run: |
           MESSAGE=$(cat build/snapshot/diff.json)
           

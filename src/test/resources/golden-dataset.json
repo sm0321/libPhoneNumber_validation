@@ -1,601 +1,601 @@
 [ {
-  "input" : "01011972612",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821011972612"
+  "input" : "4129513704",
+  "region" : "AU",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01018041900",
-  "region" : "KR",
+  "input" : "15110584622",
+  "region" : "DE",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821018041900"
+  "expectedE164" : "+4915110584622"
 }, {
-  "input" : "01016068068",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821016068068"
+  "input" : "6123391364",
+  "region" : "FR",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01092125219",
-  "region" : "KR",
+  "input" : "9073494415",
+  "region" : "JP",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821092125219"
+  "expectedE164" : "+819073494415"
 }, {
-  "input" : "01047368837",
-  "region" : "KR",
+  "input" : "9047050216",
+  "region" : "JP",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821047368837"
+  "expectedE164" : "+819047050216"
 }, {
-  "input" : "01045246870",
-  "region" : "KR",
+  "input" : "9091940918",
+  "region" : "JP",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821045246870"
+  "expectedE164" : "+819091940918"
 }, {
-  "input" : "01023463367",
-  "region" : "KR",
+  "input" : "2012087497",
+  "region" : "US",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821023463367"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12012087497"
 }, {
-  "input" : "01077746369",
+  "input" : "01030557538",
   "region" : "KR",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821077746369"
+  "expectedE164" : "+821030557538"
 }, {
-  "input" : "01024342555",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821024342555"
+  "input" : "4161266238",
+  "region" : "CA",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01079593298",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821079593298"
+  "input" : "7700674748",
+  "region" : "GB",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01072229082",
-  "region" : "KR",
+  "input" : "9030554389",
+  "region" : "JP",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821072229082"
+  "expectedE164" : "+819030554389"
 }, {
-  "input" : "01042318007",
-  "region" : "KR",
+  "input" : "4169250270",
+  "region" : "CA",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821042318007"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14169250270"
 }, {
-  "input" : "01054884732",
+  "input" : "01002251331",
   "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821054884732"
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01088481512",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821088481512"
+  "input" : "7700513697",
+  "region" : "GB",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01037529358",
-  "region" : "KR",
+  "input" : "2016072570",
+  "region" : "US",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821037529358"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12016072570"
 }, {
-  "input" : "01088401718",
-  "region" : "KR",
+  "input" : "2014996270",
+  "region" : "US",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821088401718"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12014996270"
 }, {
-  "input" : "01077525206",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821077525206"
+  "input" : "91238196421",
+  "region" : "IN",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01074153369",
+  "input" : "01092143090",
   "region" : "KR",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821074153369"
+  "expectedE164" : "+821092143090"
 }, {
-  "input" : "01019443814",
+  "input" : "01091956063",
   "region" : "KR",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821019443814"
+  "expectedE164" : "+821091956063"
 }, {
-  "input" : "01062051198",
-  "region" : "KR",
+  "input" : "2018236236",
+  "region" : "US",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821062051198"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12018236236"
 }, {
-  "input" : "01048266936",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821048266936"
+  "input" : "91237751045",
+  "region" : "IN",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01017088803",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821017088803"
+  "input" : "91230078536",
+  "region" : "IN",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01026978845",
-  "region" : "KR",
+  "input" : "4162076001",
+  "region" : "CA",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821026978845"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14162076001"
 }, {
-  "input" : "01062720759",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821062720759"
+  "input" : "91232534361",
+  "region" : "IN",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01031696256",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821031696256"
+  "input" : "6129163941",
+  "region" : "FR",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01081383478",
-  "region" : "KR",
+  "input" : "15147488294",
+  "region" : "DE",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821081383478"
+  "expectedE164" : "+4915147488294"
 }, {
-  "input" : "01013578152",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821013578152"
+  "input" : "6120200574",
+  "region" : "FR",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01029568722",
-  "region" : "KR",
+  "input" : "15186544157",
+  "region" : "DE",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821029568722"
+  "expectedE164" : "+4915186544157"
 }, {
-  "input" : "01049737354",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821049737354"
+  "input" : "6123625483",
+  "region" : "FR",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01045421036",
-  "region" : "KR",
+  "input" : "9096755186",
+  "region" : "JP",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821045421036"
+  "expectedE164" : "+819096755186"
 }, {
-  "input" : "01087884659",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821087884659"
+  "input" : "6125071279",
+  "region" : "FR",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01082879881",
-  "region" : "KR",
+  "input" : "7700083515",
+  "region" : "GB",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821082879881"
+  "expectedE164" : "+447700083515"
 }, {
-  "input" : "01080094497",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821080094497"
+  "input" : "4128417859",
+  "region" : "AU",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01096495807",
-  "region" : "KR",
+  "input" : "15196069171",
+  "region" : "DE",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821096495807"
+  "expectedE164" : "+4915196069171"
 }, {
-  "input" : "01064553183",
-  "region" : "KR",
+  "input" : "15175412250",
+  "region" : "DE",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821064553183"
+  "expectedE164" : "+4915175412250"
 }, {
-  "input" : "01047318907",
-  "region" : "KR",
+  "input" : "9095905399",
+  "region" : "JP",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821047318907"
+  "expectedE164" : "+819095905399"
 }, {
-  "input" : "01098943307",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821098943307"
+  "input" : "4127570060",
+  "region" : "AU",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01048451026",
+  "input" : "01017853146",
   "region" : "KR",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821048451026"
+  "expectedE164" : "+821017853146"
 }, {
-  "input" : "01075571449",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821075571449"
+  "input" : "6125884081",
+  "region" : "FR",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01018232531",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821018232531"
+  "input" : "2011101389",
+  "region" : "US",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01031257891",
+  "input" : "01089022219",
   "region" : "KR",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821031257891"
+  "expectedE164" : "+821089022219"
 }, {
-  "input" : "01021789107",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821021789107"
+  "input" : "6125937880",
+  "region" : "FR",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01038310237",
-  "region" : "KR",
+  "input" : "2017383151",
+  "region" : "US",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821038310237"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12017383151"
 }, {
-  "input" : "01085954581",
-  "region" : "KR",
+  "input" : "15142183485",
+  "region" : "DE",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821085954581"
+  "expectedE164" : "+4915142183485"
 }, {
-  "input" : "01096770375",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821096770375"
+  "input" : "6129131045",
+  "region" : "FR",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01054503638",
-  "region" : "KR",
+  "input" : "15102745551",
+  "region" : "DE",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821054503638"
+  "expectedE164" : "+4915102745551"
 }, {
-  "input" : "01086674642",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821086674642"
+  "input" : "91237070863",
+  "region" : "IN",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01066186850",
-  "region" : "KR",
+  "input" : "15147218539",
+  "region" : "DE",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821066186850"
+  "expectedE164" : "+4915147218539"
 }, {
-  "input" : "01067268676",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821067268676"
+  "input" : "4127841954",
+  "region" : "AU",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01092121133",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821092121133"
+  "input" : "6127646226",
+  "region" : "FR",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01082125531",
-  "region" : "KR",
+  "input" : "4167753676",
+  "region" : "CA",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821082125531"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14167753676"
 }, {
-  "input" : "01051831074",
-  "region" : "KR",
+  "input" : "4167055698",
+  "region" : "CA",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821051831074"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14167055698"
 }, {
-  "input" : "01011659640",
-  "region" : "KR",
+  "input" : "15163363596",
+  "region" : "DE",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821011659640"
+  "expectedE164" : "+4915163363596"
 }, {
-  "input" : "01017329119",
+  "input" : "01009937731",
   "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821017329119"
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01037799020",
-  "region" : "KR",
+  "input" : "2015692638",
+  "region" : "US",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821037799020"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12015692638"
 }, {
-  "input" : "01015802060",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821015802060"
+  "input" : "7700584684",
+  "region" : "GB",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01061179929",
-  "region" : "KR",
+  "input" : "15116916643",
+  "region" : "DE",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821061179929"
+  "expectedE164" : "+4915116916643"
 }, {
-  "input" : "01019433768",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821019433768"
+  "input" : "4126322454",
+  "region" : "AU",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01055831866",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821055831866"
+  "input" : "91232128930",
+  "region" : "IN",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01013090773",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821013090773"
+  "input" : "6123728189",
+  "region" : "FR",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01066651598",
-  "region" : "KR",
+  "input" : "7700391108",
+  "region" : "GB",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821066651598"
+  "expectedE164" : "+447700391108"
 }, {
-  "input" : "01028265420",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821028265420"
+  "input" : "91236068160",
+  "region" : "IN",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01035310763",
-  "region" : "KR",
+  "input" : "9088707356",
+  "region" : "JP",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821035310763"
+  "expectedE164" : "+819088707356"
 }, {
-  "input" : "01032181298",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821032181298"
+  "input" : "91231611092",
+  "region" : "IN",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01054375291",
-  "region" : "KR",
+  "input" : "9064167890",
+  "region" : "JP",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821054375291"
+  "expectedE164" : "+819064167890"
 }, {
-  "input" : "01054425273",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821054425273"
+  "input" : "4122605391",
+  "region" : "AU",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01023979885",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821023979885"
+  "input" : "91232463315",
+  "region" : "IN",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01040427916",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821040427916"
+  "input" : "6127343707",
+  "region" : "FR",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01035602074",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821035602074"
+  "input" : "6122517246",
+  "region" : "FR",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01088211512",
-  "region" : "KR",
+  "input" : "15132201115",
+  "region" : "DE",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821088211512"
+  "expectedE164" : "+4915132201115"
 }, {
-  "input" : "01031178658",
+  "input" : "01011532474",
   "region" : "KR",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821031178658"
+  "expectedE164" : "+821011532474"
 }, {
-  "input" : "01092304256",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821092304256"
+  "input" : "91239153387",
+  "region" : "IN",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01037345604",
-  "region" : "KR",
+  "input" : "4162631471",
+  "region" : "CA",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821037345604"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14162631471"
 }, {
-  "input" : "01031832271",
-  "region" : "KR",
+  "input" : "2012954125",
+  "region" : "US",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821031832271"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12012954125"
 }, {
-  "input" : "01036848569",
-  "region" : "KR",
+  "input" : "4162965637",
+  "region" : "CA",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821036848569"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14162965637"
 }, {
-  "input" : "01068945488",
+  "input" : "01085652514",
   "region" : "KR",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821068945488"
+  "expectedE164" : "+821085652514"
 }, {
-  "input" : "01090349879",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821090349879"
+  "input" : "91233194051",
+  "region" : "IN",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01050196824",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821050196824"
+  "input" : "4123340778",
+  "region" : "AU",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01023879465",
-  "region" : "KR",
+  "input" : "9013846368",
+  "region" : "JP",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821023879465"
+  "expectedE164" : "+819013846368"
 }, {
-  "input" : "01045723026",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821045723026"
+  "input" : "7700286048",
+  "region" : "GB",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01095894773",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821095894773"
+  "input" : "4124741528",
+  "region" : "AU",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01037862133",
-  "region" : "KR",
+  "input" : "9036185099",
+  "region" : "JP",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821037862133"
+  "expectedE164" : "+819036185099"
 }, {
-  "input" : "01015325905",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821015325905"
+  "input" : "91234019065",
+  "region" : "IN",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01073118533",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821073118533"
+  "input" : "6125130659",
+  "region" : "FR",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01070324888",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821070324888"
+  "input" : "91238617272",
+  "region" : "IN",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01042173572",
-  "region" : "KR",
+  "input" : "9077209240",
+  "region" : "JP",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821042173572"
+  "expectedE164" : "+819077209240"
 }, {
-  "input" : "01058578669",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821058578669"
+  "input" : "7700645393",
+  "region" : "GB",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01081695107",
+  "input" : "01068820079",
   "region" : "KR",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821081695107"
+  "expectedE164" : "+821068820079"
 }, {
-  "input" : "01084995854",
-  "region" : "KR",
+  "input" : "2016446028",
+  "region" : "US",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821084995854"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12016446028"
 }, {
-  "input" : "01044118475",
-  "region" : "KR",
+  "input" : "15111824728",
+  "region" : "DE",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821044118475"
+  "expectedE164" : "+4915111824728"
 }, {
-  "input" : "01021782060",
-  "region" : "KR",
+  "input" : "4163751181",
+  "region" : "CA",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821021782060"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14163751181"
 }, {
-  "input" : "01087354864",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821087354864"
+  "input" : "91238581727",
+  "region" : "IN",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01061204898",
-  "region" : "KR",
+  "input" : "7700009823",
+  "region" : "GB",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821061204898"
+  "expectedE164" : "+447700009823"
 }, {
-  "input" : "01022339921",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821022339921"
+  "input" : "4123103423",
+  "region" : "AU",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01055421844",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821055421844"
+  "input" : "4122977773",
+  "region" : "AU",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01039002999",
-  "region" : "KR",
+  "input" : "15126402794",
+  "region" : "DE",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821039002999"
+  "expectedE164" : "+4915126402794"
 }, {
-  "input" : "01094466838",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821094466838"
+  "input" : "4122477381",
+  "region" : "AU",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01054341493",
-  "region" : "KR",
+  "input" : "2013241910",
+  "region" : "US",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821054341493"
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12013241910"
 }, {
-  "input" : "01051759271",
-  "region" : "KR",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821051759271"
+  "input" : "6121495523",
+  "region" : "FR",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null
 }, {
-  "input" : "01047046060",
+  "input" : "01051755676",
   "region" : "KR",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821047046060"
+  "expectedE164" : "+821051755676"
 } ]
