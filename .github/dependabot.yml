@@ -15,7 +15,3 @@ updates:
 
     # 🔥 3. 동일 PR 재사용 강제
     rebase-strategy: auto
-
-    # 🔥 4. 다른 dependency 완전 차단
-    ignore:
-      - dependency-name: "*"
