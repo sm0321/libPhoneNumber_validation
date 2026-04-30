@@ -43,7 +43,7 @@ jobs:
       # 2️⃣ Slack 알림
       # =========================
       - name: Slack notify (pretty)
-        if: env.CHANGED == 'true'
+        if: true #env.CHANGED == 'true'
         run: |
           DIFF=$(jq -c . build/snapshot/diff.json)
 
@@ -101,7 +101,7 @@ jobs:
       # 3️⃣ PR 생성
       # =========================
       - name: Create PR
-        if: env.CHANGED == 'true'
+        if: true #env.CHANGED == 'true'
         uses: peter-evans/create-pull-request@v5
         with:
           commit-message: "chore: libphonenumber change detected"
