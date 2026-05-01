@@ -36,26 +36,36 @@ public class SnapshotTest {
 
         for (Map<String, Object> row : golden) {
 
-            Map<String, Object> result = new LinkedHashMap<>(row);
+            Map<String, Object> result = new LinkedHashMap<>();
 
             String input = (String) row.get("input");
             String region = (String) row.get("region");
 
+            result.put("input", input);
+            result.put("region", region);
+
             try {
                 Phonenumber.PhoneNumber number = util.parse(input, region);
 
-                result.put("valid", util.isValidNumber(number));
-                result.put("e164",
-                        util.format(number, PhoneNumberUtil.PhoneNumberFormat.E164));
+                boolean valid = util.isValidNumber(number);
+
+                result.put("valid", valid);
+
                 result.put("type",
-                        util.getNumberType(number).toString());
+                    util.getNumberType(number).toString());
+                result.put("e164",
+                    util.format(number, PhoneNumberUtil.PhoneNumberFormat.E164));
+
 
                 result.put("countryCode", number.getCountryCode());
                 result.put("nationalNumber", number.getNationalNumber());
 
             } catch (NumberParseException e) {
                 result.put("valid", false);
-                result.put("error", e.getMessage());
+                result.put("type", null);
+                result.put("e164", null);
+                result.put("countryCode", null);
+                result.put("nationalNumber", null);
             }
 
             current.add(result);
@@ -75,7 +85,7 @@ public class SnapshotTest {
             Map<String, String> c = normalize(curr);
 
             if (!b.equals(c)) {
-                Map<String, Object> change = new HashMap<>();
+                Map<String, Object> change = new LinkedHashMap<>();
                 change.put("type", "CHANGED");
                 change.put("index", i);
                 change.put("input", base.get("input"));
@@ -93,7 +103,7 @@ public class SnapshotTest {
         File dir = new File("build/snapshot");
         if (!dir.exists()) dir.mkdirs();
 
-        Map<String, Object> diff = new HashMap<>();
+        Map<String, Object> diff = new LinkedHashMap<>();
         diff.put("total", golden.size());
         diff.put("changes_count", changes.size());
         diff.put("changes",
@@ -109,16 +119,24 @@ public class SnapshotTest {
         System.out.println("Changed: " + changes.size());
     }
 
-    // 🔥 타입 문제 해결 (핵심)
+    // =========================
+    // 🔥 핵심: 비교 필드 제한
+    // =========================
     private Map<String, String> normalize(Map<String, Object> row) {
-        Map<String, String> result = new HashMap<>();
+        Map<String, String> result = new LinkedHashMap<>();
 
-        for (Map.Entry<String, Object> e : row.entrySet()) {
-            result.put(
-                    e.getKey(),
-                    e.getValue() == null ? "null" : String.valueOf(e.getValue())
-            );
-        }
+        result.put("input", str(row.get("input")));
+        result.put("region", str(row.get("region")));
+        result.put("valid", str(row.get("valid")));
+        result.put("type", str(row.get("type")));
+        result.put("e164", str(row.get("e164")));
+        result.put("countryCode", str(row.get("countryCode")));
+        result.put("nationalNumber", str(row.get("nationalNumber")));
+
         return result;
+    }
+
+    private String str(Object o) {
+        return o == null ? "null" : String.valueOf(o);
     }
 }

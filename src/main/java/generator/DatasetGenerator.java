@@ -9,21 +9,20 @@ import java.util.*;
 public class DatasetGenerator {
 
     // =========================
-    // 📦 Test Case 구조
+    // 📦 Snapshot용 Test Case
     // =========================
     static class TestCase {
         public String input;
         public String region;
         public String caseType;
 
-        public boolean expectedValid;
-        public String expectedType;
-        public String expectedE164;
+        // 🔥 actual 결과 (핵심)
+        public Boolean valid;
+        public String type;
+        public String e164;
 
-        // 🔥 핵심: parse 결과
-        public Integer parsedCountryCode;
-        public Long parsedNationalNumber;
-        public String parsedRaw;
+        public Integer countryCode;
+        public Long nationalNumber;
     }
 
     // =========================
@@ -72,8 +71,8 @@ public class DatasetGenerator {
 
         List<TestCase> dataset = new ArrayList<>();
 
-        // 📁 폴더 생성
-        File dir = new File("dataset");
+        // 📁 저장 위치
+        File dir = new File("src/test/resources");
         if (!dir.exists()) dir.mkdirs();
 
         // =========================
@@ -100,23 +99,21 @@ public class DatasetGenerator {
             try {
                 Phonenumber.PhoneNumber num = phoneUtil.parse(input, region);
 
-                // ✅ 기본 검증
-                tc.expectedValid = phoneUtil.isValidNumber(num);
+                tc.valid = phoneUtil.isValidNumber(num);
 
-                if (tc.expectedValid) {
-                    tc.expectedType = phoneUtil.getNumberType(num).name();
-                    tc.expectedE164 = phoneUtil.format(
-                            num, PhoneNumberUtil.PhoneNumberFormat.E164);
-                }
+                tc.type = phoneUtil.getNumberType(num).name();
+                tc.e164 = phoneUtil.format(
+                        num, PhoneNumberUtil.PhoneNumberFormat.E164);
 
-                // 🔥 핵심: parse 결과 저장
-                tc.parsedCountryCode = num.getCountryCode();
-                tc.parsedNationalNumber = num.getNationalNumber();
-                tc.parsedRaw = num.toString();
+                tc.countryCode = num.getCountryCode();
+                tc.nationalNumber = num.getNationalNumber();
 
             } catch (Exception e) {
-                tc.expectedValid = false;
-                tc.parsedRaw = "PARSE_ERROR";
+                tc.valid = false;
+                tc.type = null;     // 🔥 여기 수정
+                tc.e164 = null;
+                tc.countryCode = null;
+                tc.nationalNumber = null;
             }
 
             dataset.add(tc);
@@ -128,7 +125,7 @@ public class DatasetGenerator {
         mapper.writerWithDefaultPrettyPrinter()
                 .writeValue(new File("src/test/resources/golden-dataset.json"), dataset);
 
-        System.out.println("✅ dataset 생성 완료 (edge + parse 포함)");
+        System.out.println("✅ snapshot용 dataset 생성 완료");
     }
 
     // =========================
@@ -157,7 +154,9 @@ public class DatasetGenerator {
                 return country.prefix + digits;
 
             case FORMATTED:
-                return country.prefix + "-" + digits.substring(0, 4) + "-" + digits.substring(4);
+                return country.prefix + "-" +
+                        digits.substring(0, 4) + "-" +
+                        digits.substring(4);
 
             case INVALID:
                 return "abc" + random.nextInt(999);

@@ -12,18 +12,18 @@ public class GoldenTest {
     private final PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance();
     private final ObjectMapper mapper = new ObjectMapper();
 
+    // 🔥 snapshot 구조
     static class TestCase {
         public String input;
         public String region;
         public String caseType;
 
-        public boolean expectedValid;
-        public String expectedType;
-        public String expectedE164;
+        public Boolean valid;
+        public String type;
+        public String e164;
 
-        public Integer parsedCountryCode;
-        public Long parsedNationalNumber;
-        public String parsedRaw;
+        public Integer countryCode;
+        public Long nationalNumber;
     }
 
     @Test
@@ -45,51 +45,47 @@ public class GoldenTest {
                 boolean valid = phoneUtil.isValidNumber(num);
 
                 // =========================
-                // ✅ valid 검증
+                // ✅ valid 비교
                 // =========================
-                assertEquals(tc.expectedValid, valid,
+                assertEquals(tc.valid, valid,
                         "VALID mismatch: " + tc.input + " (" + tc.region + ")");
 
                 // =========================
-                // ✅ valid한 경우만 상세 검증
+                // ✅ type 비교
                 // =========================
-                if (valid) {
-
-                    assertEquals(tc.expectedType,
-                            phoneUtil.getNumberType(num).name(),
-                            "TYPE mismatch: " + tc.input);
-
-                    assertEquals(tc.expectedE164,
-                            phoneUtil.format(num,
-                                    PhoneNumberUtil.PhoneNumberFormat.E164),
-                            "E164 mismatch: " + tc.input);
-                }
+                assertEquals(tc.type,
+                        phoneUtil.getNumberType(num).name(),
+                        "TYPE mismatch: " + tc.input);
 
                 // =========================
-                // 🔥 핵심: parse 결과 검증
+                // ✅ e164 비교
                 // =========================
-                assertEquals(tc.parsedCountryCode,
+                assertEquals(tc.e164,
+                        phoneUtil.format(num,
+                                PhoneNumberUtil.PhoneNumberFormat.E164),
+                        "E164 mismatch: " + tc.input);
+
+                // =========================
+                // ✅ countryCode 비교
+                // =========================
+                assertEquals(tc.countryCode,
                         num.getCountryCode(),
                         "countryCode mismatch: " + tc.input);
 
-                assertEquals(tc.parsedNationalNumber,
+                // =========================
+                // ✅ nationalNumber 비교
+                // =========================
+                assertEquals(tc.nationalNumber,
                         num.getNationalNumber(),
                         "nationalNumber mismatch: " + tc.input);
-
-                assertEquals(tc.parsedRaw,
-                        num.toString(),
-                        "parsedRaw mismatch: " + tc.input);
 
             } catch (Exception e) {
 
                 // =========================
                 // 🔥 parse 실패 케이스
                 // =========================
-                assertFalse(tc.expectedValid,
+                assertFalse(tc.valid,
                         "Expected valid but parse failed: " + tc.input);
-
-                assertEquals("PARSE_ERROR", tc.parsedRaw,
-                        "Expected PARSE_ERROR: " + tc.input);
             }
         }
     }
