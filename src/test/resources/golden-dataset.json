@@ -1,503 +1,1923 @@
 [ {
-  "input" : "91235760497",
-  "region" : "US",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 91235760497,
-  "parsedRaw" : "Country Code: 1 National Number: 91235760497"
-}, {
-  "input" : "abc925",
+  "input" : "7700872980",
   "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+447700872980",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700872980,
+  "parsedRaw" : "Country Code: 44 National Number: 7700872980"
+}, {
+  "input" : "abc421",
+  "region" : "CA",
   "caseType" : "INVALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 925,
-  "parsedRaw" : "Country Code: 44 National Number: 925"
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 421,
+  "parsedRaw" : "Country Code: 1 National Number: 421"
 }, {
-  "input" : "6127710990",
+  "input" : "4123066149",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4123066149,
+  "parsedRaw" : "Country Code: 61 National Number: 4123066149"
+}, {
+  "input" : "6127605863",
   "region" : "FR",
   "caseType" : "VALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
   "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6127710990,
-  "parsedRaw" : "Country Code: 33 National Number: 6127710990"
+  "parsedNationalNumber" : 6127605863,
+  "parsedRaw" : "Country Code: 33 National Number: 6127605863"
 }, {
-  "input" : "412-6963-262",
-  "region" : "AU",
+  "input" : "6120072884",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6120072884,
+  "parsedRaw" : "Country Code: 33 National Number: 6120072884"
+}, {
+  "input" : "15109852273",
+  "region" : "DE",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915109852273",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15109852273,
+  "parsedRaw" : "Country Code: 49 National Number: 15109852273"
+}, {
+  "input" : "abc323",
+  "region" : "DE",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 323,
+  "parsedRaw" : "Country Code: 49 National Number: 323"
+}, {
+  "input" : "9073324988",
+  "region" : "JP",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819073324988",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9073324988,
+  "parsedRaw" : "Country Code: 81 National Number: 9073324988"
+}, {
+  "input" : "01060462913",
+  "region" : "KR",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+821060462913",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 1060462913,
+  "parsedRaw" : "Country Code: 82 National Number: 1060462913"
+}, {
+  "input" : "9123-4717-272",
+  "region" : "IN",
   "caseType" : "FORMATTED",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4126963262,
-  "parsedRaw" : "Country Code: 61 National Number: 4126963262"
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91234717272,
+  "parsedRaw" : "Country Code: 91 National Number: 91234717272"
 }, {
-  "input" : "91232153928",
+  "input" : "91237504196",
   "region" : "IN",
   "caseType" : "VALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
   "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91232153928,
-  "parsedRaw" : "Country Code: 91 National Number: 91232153928"
+  "parsedNationalNumber" : 91237504196,
+  "parsedRaw" : "Country Code: 91 National Number: 91237504196"
 }, {
-  "input" : "416-8803-664",
+  "input" : "7700116219",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+447700116219",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700116219,
+  "parsedRaw" : "Country Code: 44 National Number: 7700116219"
+}, {
+  "input" : "4165327737",
+  "region" : "GB",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 4165327737,
+  "parsedRaw" : "Country Code: 44 National Number: 4165327737"
+}, {
+  "input" : "9123-7214-791",
+  "region" : "IN",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91237214791,
+  "parsedRaw" : "Country Code: 91 National Number: 91237214791"
+}, {
+  "input" : "612-8602-668",
+  "region" : "FR",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6128602668,
+  "parsedRaw" : "Country Code: 33 National Number: 6128602668"
+}, {
+  "input" : "15115140595",
+  "region" : "DE",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915115140595",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15115140595,
+  "parsedRaw" : "Country Code: 49 National Number: 15115140595"
+}, {
+  "input" : "6128743061",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6128743061,
+  "parsedRaw" : "Country Code: 33 National Number: 6128743061"
+}, {
+  "input" : "15189526120",
+  "region" : "CA",
+  "caseType" : "MISMATCH",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+15189526120",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 5189526120,
+  "parsedRaw" : "Country Code: 1 National Number: 5189526120"
+}, {
+  "input" : "9011236585",
+  "region" : "JP",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819011236585",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9011236585,
+  "parsedRaw" : "Country Code: 81 National Number: 9011236585"
+}, {
+  "input" : "abc554",
+  "region" : "US",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 554,
+  "parsedRaw" : "Country Code: 1 National Number: 554"
+}, {
+  "input" : "abc775",
+  "region" : "JP",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 775,
+  "parsedRaw" : "Country Code: 81 National Number: 775"
+}, {
+  "input" : "6125169057",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6125169057,
+  "parsedRaw" : "Country Code: 33 National Number: 6125169057"
+}, {
+  "input" : "abc365",
+  "region" : "CA",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 365,
+  "parsedRaw" : "Country Code: 1 National Number: 365"
+}, {
+  "input" : "abc815",
+  "region" : "IN",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 815,
+  "parsedRaw" : "Country Code: 91 National Number: 815"
+}, {
+  "input" : "9123-5592-587",
+  "region" : "IN",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91235592587,
+  "parsedRaw" : "Country Code: 91 National Number: 91235592587"
+}, {
+  "input" : "9026285372",
+  "region" : "JP",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819026285372",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9026285372,
+  "parsedRaw" : "Country Code: 81 National Number: 9026285372"
+}, {
+  "input" : "6127204148",
+  "region" : "DE",
+  "caseType" : "MISMATCH",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE",
+  "expectedE164" : "+496127204148",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 6127204148,
+  "parsedRaw" : "Country Code: 49 National Number: 6127204148"
+}, {
+  "input" : "4122901512",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4122901512,
+  "parsedRaw" : "Country Code: 61 National Number: 4122901512"
+}, {
+  "input" : "2018694268",
+  "region" : "US",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12018694268",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2018694268,
+  "parsedRaw" : "Country Code: 1 National Number: 2018694268"
+}, {
+  "input" : "4169738666",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14169738666",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4169738666,
+  "parsedRaw" : "Country Code: 1 National Number: 4169738666"
+}, {
+  "input" : "4122906895",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4122906895,
+  "parsedRaw" : "Country Code: 61 National Number: 4122906895"
+}, {
+  "input" : "4121558485",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4121558485,
+  "parsedRaw" : "Country Code: 61 National Number: 4121558485"
+}, {
+  "input" : "7700958082",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700958082,
+  "parsedRaw" : "Country Code: 44 National Number: 7700958082"
+}, {
+  "input" : "9123-8893-588",
+  "region" : "IN",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91238893588,
+  "parsedRaw" : "Country Code: 91 National Number: 91238893588"
+}, {
+  "input" : "6122509471",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6122509471,
+  "parsedRaw" : "Country Code: 33 National Number: 6122509471"
+}, {
+  "input" : "abc893",
+  "region" : "AU",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 893,
+  "parsedRaw" : "Country Code: 61 National Number: 893"
+}, {
+  "input" : "2018810622",
+  "region" : "US",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12018810622",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2018810622,
+  "parsedRaw" : "Country Code: 1 National Number: 2018810622"
+}, {
+  "input" : "612-4056-141",
+  "region" : "FR",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6124056141,
+  "parsedRaw" : "Country Code: 33 National Number: 6124056141"
+}, {
+  "input" : "2015994010",
+  "region" : "US",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12015994010",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2015994010,
+  "parsedRaw" : "Country Code: 1 National Number: 2015994010"
+}, {
+  "input" : "9099509197",
+  "region" : "JP",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819099509197",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9099509197,
+  "parsedRaw" : "Country Code: 81 National Number: 9099509197"
+}, {
+  "input" : "9071158380",
+  "region" : "JP",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819071158380",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9071158380,
+  "parsedRaw" : "Country Code: 81 National Number: 9071158380"
+}, {
+  "input" : "612-4753-698",
+  "region" : "FR",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6124753698,
+  "parsedRaw" : "Country Code: 33 National Number: 6124753698"
+}, {
+  "input" : "6124653265",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6124653265,
+  "parsedRaw" : "Country Code: 33 National Number: 6124653265"
+}, {
+  "input" : "4168952474",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14168952474",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4168952474,
+  "parsedRaw" : "Country Code: 1 National Number: 4168952474"
+}, {
+  "input" : "4165277642",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14165277642",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4165277642,
+  "parsedRaw" : "Country Code: 1 National Number: 4165277642"
+}, {
+  "input" : "612",
+  "region" : "FR",
+  "caseType" : "EDGE",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 612,
+  "parsedRaw" : "Country Code: 33 National Number: 612"
+}, {
+  "input" : "4166959658",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14166959658",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4166959658,
+  "parsedRaw" : "Country Code: 1 National Number: 4166959658"
+}, {
+  "input" : "612-0806-956",
+  "region" : "FR",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6120806956,
+  "parsedRaw" : "Country Code: 33 National Number: 6120806956"
+}, {
+  "input" : "4129117928",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4129117928,
+  "parsedRaw" : "Country Code: 61 National Number: 4129117928"
+}, {
+  "input" : "9091195886",
+  "region" : "JP",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819091195886",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9091195886,
+  "parsedRaw" : "Country Code: 81 National Number: 9091195886"
+}, {
+  "input" : "7700974337",
+  "region" : "AU",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 7700974337,
+  "parsedRaw" : "Country Code: 61 National Number: 7700974337"
+}, {
+  "input" : "abc952",
+  "region" : "GB",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 952,
+  "parsedRaw" : "Country Code: 44 National Number: 952"
+}, {
+  "input" : "90-6068-6107",
+  "region" : "JP",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819060686107",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9060686107,
+  "parsedRaw" : "Country Code: 81 National Number: 9060686107"
+}, {
+  "input" : "abc471",
+  "region" : "DE",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 471,
+  "parsedRaw" : "Country Code: 49 National Number: 471"
+}, {
+  "input" : "abc386",
+  "region" : "AU",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 386,
+  "parsedRaw" : "Country Code: 61 National Number: 386"
+}, {
+  "input" : "9018718466",
+  "region" : "JP",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819018718466",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9018718466,
+  "parsedRaw" : "Country Code: 81 National Number: 9018718466"
+}, {
+  "input" : "91233216983",
+  "region" : "IN",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91233216983,
+  "parsedRaw" : "Country Code: 91 National Number: 91233216983"
+}, {
+  "input" : "7700069983",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+447700069983",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700069983,
+  "parsedRaw" : "Country Code: 44 National Number: 7700069983"
+}, {
+  "input" : "416-0153-979",
+  "region" : "CA",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4160153979,
+  "parsedRaw" : "Country Code: 1 National Number: 4160153979"
+}, {
+  "input" : "15151216184",
+  "region" : "DE",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915151216184",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15151216184,
+  "parsedRaw" : "Country Code: 49 National Number: 15151216184"
+}, {
+  "input" : "612",
+  "region" : "FR",
+  "caseType" : "EDGE",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 612,
+  "parsedRaw" : "Country Code: 33 National Number: 612"
+}, {
+  "input" : "6122192941",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6122192941,
+  "parsedRaw" : "Country Code: 33 National Number: 6122192941"
+}, {
+  "input" : "612-5304-697",
+  "region" : "FR",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6125304697,
+  "parsedRaw" : "Country Code: 33 National Number: 6125304697"
+}, {
+  "input" : "6126550452",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6126550452,
+  "parsedRaw" : "Country Code: 33 National Number: 6126550452"
+}, {
+  "input" : "abc452",
+  "region" : "CA",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 452,
+  "parsedRaw" : "Country Code: 1 National Number: 452"
+}, {
+  "input" : "abc720",
+  "region" : "JP",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 720,
+  "parsedRaw" : "Country Code: 81 National Number: 720"
+}, {
+  "input" : "010-5183-8652",
+  "region" : "KR",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+821051838652",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 1051838652,
+  "parsedRaw" : "Country Code: 82 National Number: 1051838652"
+}, {
+  "input" : "010-3583-1129",
+  "region" : "KR",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+821035831129",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 1035831129,
+  "parsedRaw" : "Country Code: 82 National Number: 1035831129"
+}, {
+  "input" : "7700249160",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700249160,
+  "parsedRaw" : "Country Code: 44 National Number: 7700249160"
+}, {
+  "input" : "91239633477",
+  "region" : "IN",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91239633477,
+  "parsedRaw" : "Country Code: 91 National Number: 91239633477"
+}, {
+  "input" : "612-8954-698",
+  "region" : "FR",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6128954698,
+  "parsedRaw" : "Country Code: 33 National Number: 6128954698"
+}, {
+  "input" : "91232175264",
+  "region" : "IN",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91232175264,
+  "parsedRaw" : "Country Code: 91 National Number: 91232175264"
+}, {
+  "input" : "01035805320",
+  "region" : "GB",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 1035805320,
+  "parsedRaw" : "Country Code: 44 National Number: 1035805320"
+}, {
+  "input" : "4160556440",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4160556440,
+  "parsedRaw" : "Country Code: 1 National Number: 4160556440"
+}, {
+  "input" : "9054532945",
+  "region" : "IN",
+  "caseType" : "MISMATCH",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+919054532945",
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 9054532945,
+  "parsedRaw" : "Country Code: 91 National Number: 9054532945"
+}, {
+  "input" : "4123884775",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4123884775,
+  "parsedRaw" : "Country Code: 61 National Number: 4123884775"
+}, {
+  "input" : "abc654",
+  "region" : "DE",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 654,
+  "parsedRaw" : "Country Code: 49 National Number: 654"
+}, {
+  "input" : "abc94",
+  "region" : "KR",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 94,
+  "parsedRaw" : "Country Code: 82 National Number: 94"
+}, {
+  "input" : "01063513078",
+  "region" : "AU",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 1063513078,
+  "parsedRaw" : "Country Code: 61 National Number: 1063513078"
+}, {
+  "input" : "2016886736",
+  "region" : "IN",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 2016886736,
+  "parsedRaw" : "Country Code: 91 National Number: 2016886736"
+}, {
+  "input" : "4162135163",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14162135163",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4162135163,
+  "parsedRaw" : "Country Code: 1 National Number: 4162135163"
+}, {
+  "input" : "4160022651",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4160022651,
+  "parsedRaw" : "Country Code: 1 National Number: 4160022651"
+}, {
+  "input" : "4169115715",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14169115715",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4169115715,
+  "parsedRaw" : "Country Code: 1 National Number: 4169115715"
+}, {
+  "input" : "4127621131",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4127621131,
+  "parsedRaw" : "Country Code: 61 National Number: 4127621131"
+}, {
+  "input" : "416",
+  "region" : "CA",
+  "caseType" : "EDGE",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 416,
+  "parsedRaw" : "Country Code: 1 National Number: 416"
+}, {
+  "input" : "91231648145",
+  "region" : "FR",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 91231648145,
+  "parsedRaw" : "Country Code: 33 National Number: 91231648145"
+}, {
+  "input" : "abc946",
+  "region" : "AU",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 946,
+  "parsedRaw" : "Country Code: 61 National Number: 946"
+}, {
+  "input" : "4120617475",
+  "region" : "JP",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 4120617475,
+  "parsedRaw" : "Country Code: 81 National Number: 4120617475"
+}, {
+  "input" : "01048682148",
+  "region" : "KR",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+821048682148",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 1048682148,
+  "parsedRaw" : "Country Code: 82 National Number: 1048682148"
+}, {
+  "input" : "01088331224",
+  "region" : "KR",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+821088331224",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 1088331224,
+  "parsedRaw" : "Country Code: 82 National Number: 1088331224"
+}, {
+  "input" : "2016251493",
+  "region" : "US",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12016251493",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2016251493,
+  "parsedRaw" : "Country Code: 1 National Number: 2016251493"
+}, {
+  "input" : "151-8952-3499",
+  "region" : "DE",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915189523499",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15189523499,
+  "parsedRaw" : "Country Code: 49 National Number: 15189523499"
+}, {
+  "input" : "7700066813",
+  "region" : "AU",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 7700066813,
+  "parsedRaw" : "Country Code: 61 National Number: 7700066813"
+}, {
+  "input" : "6126028742",
+  "region" : "JP",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 6126028742,
+  "parsedRaw" : "Country Code: 81 National Number: 6126028742"
+}, {
+  "input" : "abc406",
+  "region" : "DE",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 406,
+  "parsedRaw" : "Country Code: 49 National Number: 406"
+}, {
+  "input" : "2017256583",
+  "region" : "US",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12017256583",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2017256583,
+  "parsedRaw" : "Country Code: 1 National Number: 2017256583"
+}, {
+  "input" : "6124442129",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6124442129,
+  "parsedRaw" : "Country Code: 33 National Number: 6124442129"
+}, {
+  "input" : "9069672845",
+  "region" : "JP",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819069672845",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9069672845,
+  "parsedRaw" : "Country Code: 81 National Number: 9069672845"
+}, {
+  "input" : "9123-6680-189",
+  "region" : "IN",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91236680189,
+  "parsedRaw" : "Country Code: 91 National Number: 91236680189"
+}, {
+  "input" : "7700285655",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700285655,
+  "parsedRaw" : "Country Code: 44 National Number: 7700285655"
+}, {
+  "input" : "6126189391",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6126189391,
+  "parsedRaw" : "Country Code: 33 National Number: 6126189391"
+}, {
+  "input" : "91233280355",
+  "region" : "IN",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91233280355,
+  "parsedRaw" : "Country Code: 91 National Number: 91233280355"
+}, {
+  "input" : "9048481404",
+  "region" : "AU",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 9048481404,
+  "parsedRaw" : "Country Code: 61 National Number: 9048481404"
+}, {
+  "input" : "abc517",
+  "region" : "AU",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 517,
+  "parsedRaw" : "Country Code: 61 National Number: 517"
+}, {
+  "input" : "90-0328-4013",
+  "region" : "JP",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9003284013,
+  "parsedRaw" : "Country Code: 81 National Number: 9003284013"
+}, {
+  "input" : "201-0723-784",
+  "region" : "US",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2010723784,
+  "parsedRaw" : "Country Code: 1 National Number: 2010723784"
+}, {
+  "input" : "9068016169",
+  "region" : "CA",
+  "caseType" : "MISMATCH",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+19068016169",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 9068016169,
+  "parsedRaw" : "Country Code: 1 National Number: 9068016169"
+}, {
+  "input" : "6124215737",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6124215737,
+  "parsedRaw" : "Country Code: 33 National Number: 6124215737"
+}, {
+  "input" : "4127949970",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4127949970,
+  "parsedRaw" : "Country Code: 61 National Number: 4127949970"
+}, {
+  "input" : "151-8574-0988",
+  "region" : "DE",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915185740988",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15185740988,
+  "parsedRaw" : "Country Code: 49 National Number: 15185740988"
+}, {
+  "input" : "7700",
+  "region" : "GB",
+  "caseType" : "EDGE",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700,
+  "parsedRaw" : "Country Code: 44 National Number: 7700"
+}, {
+  "input" : "4168161962",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14168161962",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4168161962,
+  "parsedRaw" : "Country Code: 1 National Number: 4168161962"
+}, {
+  "input" : "7700497162",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700497162,
+  "parsedRaw" : "Country Code: 44 National Number: 7700497162"
+}, {
+  "input" : "abc520",
+  "region" : "KR",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 520,
+  "parsedRaw" : "Country Code: 82 National Number: 520"
+}, {
+  "input" : "abc452",
+  "region" : "IN",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 452,
+  "parsedRaw" : "Country Code: 91 National Number: 452"
+}, {
+  "input" : "01026041265",
+  "region" : "KR",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+821026041265",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 1026041265,
+  "parsedRaw" : "Country Code: 82 National Number: 1026041265"
+}, {
+  "input" : "6120758425",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6120758425,
+  "parsedRaw" : "Country Code: 33 National Number: 6120758425"
+}, {
+  "input" : "412-9140-289",
+  "region" : "AU",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4129140289,
+  "parsedRaw" : "Country Code: 61 National Number: 4129140289"
+}, {
+  "input" : "abc637",
+  "region" : "CA",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 637,
+  "parsedRaw" : "Country Code: 1 National Number: 637"
+}, {
+  "input" : "91236251878",
+  "region" : "IN",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91236251878,
+  "parsedRaw" : "Country Code: 91 National Number: 91236251878"
+}, {
+  "input" : "01002156372",
+  "region" : "JP",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 1002156372,
+  "parsedRaw" : "Country Code: 81 National Number: 1002156372"
+}, {
+  "input" : "9041857988",
+  "region" : "KR",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 9041857988,
+  "parsedRaw" : "Country Code: 82 National Number: 9041857988"
+}, {
+  "input" : "abc153",
+  "region" : "AU",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 153,
+  "parsedRaw" : "Country Code: 61 National Number: 153"
+}, {
+  "input" : "01085332819",
+  "region" : "KR",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+821085332819",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 1085332819,
+  "parsedRaw" : "Country Code: 82 National Number: 1085332819"
+}, {
+  "input" : "91239324832",
+  "region" : "IN",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91239324832,
+  "parsedRaw" : "Country Code: 91 National Number: 91239324832"
+}, {
+  "input" : "abc507",
+  "region" : "CA",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 507,
+  "parsedRaw" : "Country Code: 1 National Number: 507"
+}, {
+  "input" : "15153354820",
+  "region" : "DE",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915153354820",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15153354820,
+  "parsedRaw" : "Country Code: 49 National Number: 15153354820"
+}, {
+  "input" : "abc139",
+  "region" : "JP",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 139,
+  "parsedRaw" : "Country Code: 81 National Number: 139"
+}, {
+  "input" : "91234751134",
+  "region" : "IN",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91234751134,
+  "parsedRaw" : "Country Code: 91 National Number: 91234751134"
+}, {
+  "input" : "7700316081",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+447700316081",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700316081,
+  "parsedRaw" : "Country Code: 44 National Number: 7700316081"
+}, {
+  "input" : "15136490277",
+  "region" : "DE",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915136490277",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15136490277,
+  "parsedRaw" : "Country Code: 49 National Number: 15136490277"
+}, {
+  "input" : "7700185030",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+447700185030",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700185030,
+  "parsedRaw" : "Country Code: 44 National Number: 7700185030"
+}, {
+  "input" : "4163271632",
+  "region" : "JP",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 4163271632,
+  "parsedRaw" : "Country Code: 81 National Number: 4163271632"
+}, {
+  "input" : "6120344797",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6120344797,
+  "parsedRaw" : "Country Code: 33 National Number: 6120344797"
+}, {
+  "input" : "4161024436",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4161024436,
+  "parsedRaw" : "Country Code: 1 National Number: 4161024436"
+}, {
+  "input" : "4161115792",
+  "region" : "KR",
+  "caseType" : "MISMATCH",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE",
+  "expectedE164" : "+824161115792",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 4161115792,
+  "parsedRaw" : "Country Code: 82 National Number: 4161115792"
+}, {
+  "input" : "abc369",
+  "region" : "JP",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 369,
+  "parsedRaw" : "Country Code: 81 National Number: 369"
+}, {
+  "input" : "90-3941-6039",
+  "region" : "JP",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819039416039",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9039416039,
+  "parsedRaw" : "Country Code: 81 National Number: 9039416039"
+}, {
+  "input" : "7700057124",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+447700057124",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700057124,
+  "parsedRaw" : "Country Code: 44 National Number: 7700057124"
+}, {
+  "input" : "2012695894",
+  "region" : "US",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12012695894",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2012695894,
+  "parsedRaw" : "Country Code: 1 National Number: 2012695894"
+}, {
+  "input" : "612-1023-089",
+  "region" : "FR",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6121023089,
+  "parsedRaw" : "Country Code: 33 National Number: 6121023089"
+}, {
+  "input" : "15158381527",
+  "region" : "DE",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915158381527",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15158381527,
+  "parsedRaw" : "Country Code: 49 National Number: 15158381527"
+}, {
+  "input" : "151-5986-1092",
+  "region" : "DE",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915159861092",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15159861092,
+  "parsedRaw" : "Country Code: 49 National Number: 15159861092"
+}, {
+  "input" : "4162429035",
+  "region" : "AU",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4162429035,
+  "parsedRaw" : "Country Code: 61 National Number: 4162429035"
+}, {
+  "input" : "4120520853",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4120520853,
+  "parsedRaw" : "Country Code: 61 National Number: 4120520853"
+}, {
+  "input" : "151-3032-4210",
+  "region" : "DE",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915130324210",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15130324210,
+  "parsedRaw" : "Country Code: 49 National Number: 15130324210"
+}, {
+  "input" : "412-5451-360",
+  "region" : "AU",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4125451360,
+  "parsedRaw" : "Country Code: 61 National Number: 4125451360"
+}, {
+  "input" : "412-7814-577",
+  "region" : "AU",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4127814577,
+  "parsedRaw" : "Country Code: 61 National Number: 4127814577"
+}, {
+  "input" : "abc62",
+  "region" : "FR",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 62,
+  "parsedRaw" : "Country Code: 33 National Number: 62"
+}, {
+  "input" : "9077050107",
+  "region" : "FR",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 9077050107,
+  "parsedRaw" : "Country Code: 33 National Number: 9077050107"
+}, {
+  "input" : "abc368",
+  "region" : "AU",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 368,
+  "parsedRaw" : "Country Code: 61 National Number: 368"
+}, {
+  "input" : "91238887813",
+  "region" : "IN",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91238887813,
+  "parsedRaw" : "Country Code: 91 National Number: 91238887813"
+}, {
+  "input" : "abc941",
+  "region" : "AU",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 941,
+  "parsedRaw" : "Country Code: 61 National Number: 941"
+}, {
+  "input" : "abc761",
+  "region" : "JP",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 761,
+  "parsedRaw" : "Country Code: 81 National Number: 761"
+}, {
+  "input" : "4121871744",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4121871744,
+  "parsedRaw" : "Country Code: 61 National Number: 4121871744"
+}, {
+  "input" : "6127964093",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6127964093,
+  "parsedRaw" : "Country Code: 33 National Number: 6127964093"
+}, {
+  "input" : "15185032822",
+  "region" : "DE",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915185032822",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15185032822,
+  "parsedRaw" : "Country Code: 49 National Number: 15185032822"
+}, {
+  "input" : "15141510749",
+  "region" : "DE",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915141510749",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15141510749,
+  "parsedRaw" : "Country Code: 49 National Number: 15141510749"
+}, {
+  "input" : "7700-1690-21",
+  "region" : "GB",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+447700169021",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700169021,
+  "parsedRaw" : "Country Code: 44 National Number: 7700169021"
+}, {
+  "input" : "abc94",
+  "region" : "AU",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 94,
+  "parsedRaw" : "Country Code: 61 National Number: 94"
+}, {
+  "input" : "4167897268",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14167897268",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4167897268,
+  "parsedRaw" : "Country Code: 1 National Number: 4167897268"
+}, {
+  "input" : "7700-5958-84",
+  "region" : "GB",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700595884,
+  "parsedRaw" : "Country Code: 44 National Number: 7700595884"
+}, {
+  "input" : "416-1183-273",
+  "region" : "CA",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4161183273,
+  "parsedRaw" : "Country Code: 1 National Number: 4161183273"
+}, {
+  "input" : "412-1778-386",
+  "region" : "AU",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4121778386,
+  "parsedRaw" : "Country Code: 61 National Number: 4121778386"
+}, {
+  "input" : "7700155343",
+  "region" : "FR",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 7700155343,
+  "parsedRaw" : "Country Code: 33 National Number: 7700155343"
+}, {
+  "input" : "416-5431-424",
   "region" : "CA",
   "caseType" : "FORMATTED",
   "expectedValid" : true,
   "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+14168803664",
+  "expectedE164" : "+14165431424",
   "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4168803664,
-  "parsedRaw" : "Country Code: 1 National Number: 4168803664"
+  "parsedNationalNumber" : 4165431424,
+  "parsedRaw" : "Country Code: 1 National Number: 4165431424"
 }, {
-  "input" : "2019668913",
-  "region" : "US",
+  "input" : "4164974653",
+  "region" : "CA",
   "caseType" : "VALID",
   "expectedValid" : true,
   "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12019668913",
+  "expectedE164" : "+14164974653",
   "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2019668913,
-  "parsedRaw" : "Country Code: 1 National Number: 2019668913"
+  "parsedNationalNumber" : 4164974653,
+  "parsedRaw" : "Country Code: 1 National Number: 4164974653"
 }, {
-  "input" : "4169533033",
-  "region" : "US",
-  "caseType" : "MISMATCH",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+14169533033",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4169533033,
-  "parsedRaw" : "Country Code: 1 National Number: 4169533033"
-}, {
-  "input" : "91238302806",
-  "region" : "AU",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 91238302806,
-  "parsedRaw" : "Country Code: 61 National Number: 91238302806"
-}, {
-  "input" : "abc468",
-  "region" : "IN",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 468,
-  "parsedRaw" : "Country Code: 91 National Number: 468"
-}, {
-  "input" : "91237057981",
-  "region" : "GB",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 91237057981,
-  "parsedRaw" : "Country Code: 44 National Number: 91237057981"
-}, {
-  "input" : "abc426",
-  "region" : "KR",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 426,
-  "parsedRaw" : "Country Code: 82 National Number: 426"
-}, {
-  "input" : "abc251",
-  "region" : "JP",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 251,
-  "parsedRaw" : "Country Code: 81 National Number: 251"
-}, {
-  "input" : "2013686391",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12013686391",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2013686391,
-  "parsedRaw" : "Country Code: 1 National Number: 2013686391"
-}, {
-  "input" : "15136164626",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915136164626",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15136164626,
-  "parsedRaw" : "Country Code: 49 National Number: 15136164626"
-}, {
-  "input" : "91230524990",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91230524990,
-  "parsedRaw" : "Country Code: 91 National Number: 91230524990"
-}, {
-  "input" : "2012693224",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12012693224",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2012693224,
-  "parsedRaw" : "Country Code: 1 National Number: 2012693224"
-}, {
-  "input" : "15194578649",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915194578649",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15194578649,
-  "parsedRaw" : "Country Code: 49 National Number: 15194578649"
-}, {
-  "input" : "abc475",
-  "region" : "JP",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 475,
-  "parsedRaw" : "Country Code: 81 National Number: 475"
-}, {
-  "input" : "7700246892",
+  "input" : "7700223654",
   "region" : "GB",
   "caseType" : "VALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
   "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700246892,
-  "parsedRaw" : "Country Code: 44 National Number: 7700246892"
+  "parsedNationalNumber" : 7700223654,
+  "parsedRaw" : "Country Code: 44 National Number: 7700223654"
 }, {
-  "input" : "9089088913",
+  "input" : "abc958",
   "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819089088913",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9089088913,
-  "parsedRaw" : "Country Code: 81 National Number: 9089088913"
-}, {
-  "input" : "01043441490",
-  "region" : "KR",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821043441490",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1043441490,
-  "parsedRaw" : "Country Code: 82 National Number: 1043441490"
-}, {
-  "input" : "9026612724",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819026612724",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9026612724,
-  "parsedRaw" : "Country Code: 81 National Number: 9026612724"
-}, {
-  "input" : "91231218876",
-  "region" : "IN",
-  "caseType" : "VALID",
+  "caseType" : "INVALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91231218876,
-  "parsedRaw" : "Country Code: 91 National Number: 91231218876"
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 958,
+  "parsedRaw" : "Country Code: 81 National Number: 958"
 }, {
-  "input" : "9030118921",
+  "input" : "abc83",
   "region" : "JP",
-  "caseType" : "VALID",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 83,
+  "parsedRaw" : "Country Code: 81 National Number: 83"
+}, {
+  "input" : "151-1322-1162",
+  "region" : "DE",
+  "caseType" : "FORMATTED",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+819030118921",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9030118921,
-  "parsedRaw" : "Country Code: 81 National Number: 9030118921"
+  "expectedE164" : "+4915113221162",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15113221162,
+  "parsedRaw" : "Country Code: 49 National Number: 15113221162"
 }, {
-  "input" : "4126935266",
+  "input" : "612-4148-463",
+  "region" : "FR",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6124148463,
+  "parsedRaw" : "Country Code: 33 National Number: 6124148463"
+}, {
+  "input" : "612-1593-432",
+  "region" : "FR",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6121593432,
+  "parsedRaw" : "Country Code: 33 National Number: 6121593432"
+}, {
+  "input" : "412-0026-430",
   "region" : "AU",
-  "caseType" : "VALID",
+  "caseType" : "FORMATTED",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
   "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4126935266,
-  "parsedRaw" : "Country Code: 61 National Number: 4126935266"
+  "parsedNationalNumber" : 4120026430,
+  "parsedRaw" : "Country Code: 61 National Number: 4120026430"
 }, {
-  "input" : "416-0972-545",
+  "input" : "15120788159",
+  "region" : "AU",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 15120788159,
+  "parsedRaw" : "Country Code: 61 National Number: 15120788159"
+}, {
+  "input" : "01099101769",
+  "region" : "KR",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+821099101769",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 1099101769,
+  "parsedRaw" : "Country Code: 82 National Number: 1099101769"
+}, {
+  "input" : "abc237",
+  "region" : "GB",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 237,
+  "parsedRaw" : "Country Code: 44 National Number: 237"
+}, {
+  "input" : "2013453466",
+  "region" : "US",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12013453466",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2013453466,
+  "parsedRaw" : "Country Code: 1 National Number: 2013453466"
+}, {
+  "input" : "6126160761",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6126160761,
+  "parsedRaw" : "Country Code: 33 National Number: 6126160761"
+}, {
+  "input" : "abc395",
+  "region" : "IN",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 395,
+  "parsedRaw" : "Country Code: 91 National Number: 395"
+}, {
+  "input" : "416-8648-222",
   "region" : "CA",
   "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14168648222",
   "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4160972545,
-  "parsedRaw" : "Country Code: 1 National Number: 4160972545"
+  "parsedNationalNumber" : 4168648222,
+  "parsedRaw" : "Country Code: 1 National Number: 4168648222"
 }, {
-  "input" : "2014595099",
-  "region" : "AU",
-  "caseType" : "MISMATCH",
+  "input" : "6121054223",
+  "region" : "FR",
+  "caseType" : "VALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 2014595099,
-  "parsedRaw" : "Country Code: 61 National Number: 2014595099"
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6121054223,
+  "parsedRaw" : "Country Code: 33 National Number: 6121054223"
 }, {
-  "input" : "15110044769",
+  "input" : "15117263235",
   "region" : "DE",
   "caseType" : "VALID",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+4915110044769",
+  "expectedE164" : "+4915117263235",
   "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15110044769,
-  "parsedRaw" : "Country Code: 49 National Number: 15110044769"
+  "parsedNationalNumber" : 15117263235,
+  "parsedRaw" : "Country Code: 49 National Number: 15117263235"
 }, {
-  "input" : "7700-5130-88",
-  "region" : "GB",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700513088,
-  "parsedRaw" : "Country Code: 44 National Number: 7700513088"
-}, {
-  "input" : "7700280264",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700280264,
-  "parsedRaw" : "Country Code: 44 National Number: 7700280264"
-}, {
-  "input" : "4121463919",
-  "region" : "AU",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4121463919,
-  "parsedRaw" : "Country Code: 61 National Number: 4121463919"
-}, {
-  "input" : "abc996",
-  "region" : "US",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 996,
-  "parsedRaw" : "Country Code: 1 National Number: 996"
-}, {
-  "input" : "2016403074",
+  "input" : "2016914653",
   "region" : "US",
   "caseType" : "VALID",
   "expectedValid" : true,
   "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12016403074",
+  "expectedE164" : "+12016914653",
   "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2016403074,
-  "parsedRaw" : "Country Code: 1 National Number: 2016403074"
+  "parsedNationalNumber" : 2016914653,
+  "parsedRaw" : "Country Code: 1 National Number: 2016914653"
 }, {
-  "input" : "2011814770",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2011814770,
-  "parsedRaw" : "Country Code: 1 National Number: 2011814770"
-}, {
-  "input" : "91237456458",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91237456458,
-  "parsedRaw" : "Country Code: 91 National Number: 91237456458"
-}, {
-  "input" : "2016892428",
-  "region" : "US",
+  "input" : "15180192915",
+  "region" : "DE",
   "caseType" : "VALID",
   "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12016892428",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2016892428,
-  "parsedRaw" : "Country Code: 1 National Number: 2016892428"
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915180192915",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15180192915,
+  "parsedRaw" : "Country Code: 49 National Number: 15180192915"
 }, {
-  "input" : "412-6586-021",
-  "region" : "AU",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4126586021,
-  "parsedRaw" : "Country Code: 61 National Number: 4126586021"
-}, {
-  "input" : "01002086339",
+  "input" : "abc94",
   "region" : "KR",
-  "caseType" : "VALID",
+  "caseType" : "INVALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
   "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1002086339,
-  "parsedRaw" : "Country Code: 82 National Number: 1002086339"
+  "parsedNationalNumber" : 94,
+  "parsedRaw" : "Country Code: 82 National Number: 94"
 }, {
-  "input" : "7700-2752-86",
+  "input" : "7700439631",
   "region" : "GB",
-  "caseType" : "FORMATTED",
+  "caseType" : "VALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
   "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700275286,
-  "parsedRaw" : "Country Code: 44 National Number: 7700275286"
+  "parsedNationalNumber" : 7700439631,
+  "parsedRaw" : "Country Code: 44 National Number: 7700439631"
 }, {
-  "input" : "abc246",
-  "region" : "FR",
-  "caseType" : "INVALID",
+  "input" : "7700915705",
+  "region" : "GB",
+  "caseType" : "VALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 246,
-  "parsedRaw" : "Country Code: 33 National Number: 246"
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700915705,
+  "parsedRaw" : "Country Code: 44 National Number: 7700915705"
 }, {
-  "input" : "612-2922-866",
-  "region" : "FR",
-  "caseType" : "FORMATTED",
+  "input" : "4121756024",
+  "region" : "AU",
+  "caseType" : "VALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6122922866,
-  "parsedRaw" : "Country Code: 33 National Number: 6122922866"
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4121756024,
+  "parsedRaw" : "Country Code: 61 National Number: 4121756024"
 }, {
-  "input" : "7700812153",
+  "input" : "7700724592",
   "region" : "GB",
   "caseType" : "VALID",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+447700812153",
+  "expectedE164" : "+447700724592",
   "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700812153,
-  "parsedRaw" : "Country Code: 44 National Number: 7700812153"
+  "parsedNationalNumber" : 7700724592,
+  "parsedRaw" : "Country Code: 44 National Number: 7700724592"
 }, {
-  "input" : "91233465075",
-  "region" : "IN",
+  "input" : "6126819040",
+  "region" : "FR",
   "caseType" : "VALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91233465075,
-  "parsedRaw" : "Country Code: 91 National Number: 91233465075"
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6126819040,
+  "parsedRaw" : "Country Code: 33 National Number: 6126819040"
 }, {
-  "input" : "01030255094",
-  "region" : "AU",
+  "input" : "6126342403",
+  "region" : "KR",
   "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 1030255094,
-  "parsedRaw" : "Country Code: 61 National Number: 1030255094"
-}, {
-  "input" : "91234125381",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91234125381,
-  "parsedRaw" : "Country Code: 91 National Number: 91234125381"
-}, {
-  "input" : "7700645477",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700645477,
-  "parsedRaw" : "Country Code: 44 National Number: 7700645477"
-}, {
-  "input" : "15176204516",
-  "region" : "DE",
-  "caseType" : "VALID",
   "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915176204516",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15176204516,
-  "parsedRaw" : "Country Code: 49 National Number: 15176204516"
-}, {
-  "input" : "90-0583-3253",
-  "region" : "JP",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9005833253,
-  "parsedRaw" : "Country Code: 81 National Number: 9005833253"
-}, {
-  "input" : "4129316547",
-  "region" : "AU",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4129316547,
-  "parsedRaw" : "Country Code: 61 National Number: 4129316547"
+  "expectedType" : "FIXED_LINE",
+  "expectedE164" : "+826126342403",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 6126342403,
+  "parsedRaw" : "Country Code: 82 National Number: 6126342403"
 }, {
   "input" : "90",
   "region" : "JP",
@@ -508,2026 +1928,6 @@
   "parsedCountryCode" : 81,
   "parsedNationalNumber" : 90,
   "parsedRaw" : "Country Code: 81 National Number: 90"
-}, {
-  "input" : "15178401093",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915178401093",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15178401093,
-  "parsedRaw" : "Country Code: 49 National Number: 15178401093"
-}, {
-  "input" : "4122161954",
-  "region" : "DE",
-  "caseType" : "MISMATCH",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE",
-  "expectedE164" : "+494122161954",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 4122161954,
-  "parsedRaw" : "Country Code: 49 National Number: 4122161954"
-}, {
-  "input" : "9035610619",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819035610619",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9035610619,
-  "parsedRaw" : "Country Code: 81 National Number: 9035610619"
-}, {
-  "input" : "6124289863",
-  "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6124289863,
-  "parsedRaw" : "Country Code: 33 National Number: 6124289863"
-}, {
-  "input" : "151-1833-5074",
-  "region" : "DE",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915118335074",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15118335074,
-  "parsedRaw" : "Country Code: 49 National Number: 15118335074"
-}, {
-  "input" : "91234301957",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91234301957,
-  "parsedRaw" : "Country Code: 91 National Number: 91234301957"
-}, {
-  "input" : "abc496",
-  "region" : "IN",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 496,
-  "parsedRaw" : "Country Code: 91 National Number: 496"
-}, {
-  "input" : "01096975894",
-  "region" : "KR",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821096975894",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1096975894,
-  "parsedRaw" : "Country Code: 82 National Number: 1096975894"
-}, {
-  "input" : "abc535",
-  "region" : "AU",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 535,
-  "parsedRaw" : "Country Code: 61 National Number: 535"
-}, {
-  "input" : "9063348470",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819063348470",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9063348470,
-  "parsedRaw" : "Country Code: 81 National Number: 9063348470"
-}, {
-  "input" : "15119150389",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915119150389",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15119150389,
-  "parsedRaw" : "Country Code: 49 National Number: 15119150389"
-}, {
-  "input" : "90-8445-4822",
-  "region" : "JP",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819084454822",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9084454822,
-  "parsedRaw" : "Country Code: 81 National Number: 9084454822"
-}, {
-  "input" : "9078210743",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819078210743",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9078210743,
-  "parsedRaw" : "Country Code: 81 National Number: 9078210743"
-}, {
-  "input" : "abc206",
-  "region" : "JP",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 206,
-  "parsedRaw" : "Country Code: 81 National Number: 206"
-}, {
-  "input" : "6122510753",
-  "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6122510753,
-  "parsedRaw" : "Country Code: 33 National Number: 6122510753"
-}, {
-  "input" : "412",
-  "region" : "AU",
-  "caseType" : "EDGE",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 412,
-  "parsedRaw" : "Country Code: 61 National Number: 412"
-}, {
-  "input" : "9123-8615-893",
-  "region" : "IN",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91238615893,
-  "parsedRaw" : "Country Code: 91 National Number: 91238615893"
-}, {
-  "input" : "6124602008",
-  "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6124602008,
-  "parsedRaw" : "Country Code: 33 National Number: 6124602008"
-}, {
-  "input" : "01034607054",
-  "region" : "AU",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 1034607054,
-  "parsedRaw" : "Country Code: 61 National Number: 1034607054"
-}, {
-  "input" : "9037361253",
-  "region" : "KR",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 9037361253,
-  "parsedRaw" : "Country Code: 82 National Number: 9037361253"
-}, {
-  "input" : "abc787",
-  "region" : "CA",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 787,
-  "parsedRaw" : "Country Code: 1 National Number: 787"
-}, {
-  "input" : "9085541393",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819085541393",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9085541393,
-  "parsedRaw" : "Country Code: 81 National Number: 9085541393"
-}, {
-  "input" : "01073721772",
-  "region" : "JP",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 7,
-  "parsedNationalNumber" : 3721772,
-  "parsedRaw" : "Country Code: 7 National Number: 3721772"
-}, {
-  "input" : "4122133311",
-  "region" : "AU",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4122133311,
-  "parsedRaw" : "Country Code: 61 National Number: 4122133311"
-}, {
-  "input" : "151-6386-2406",
-  "region" : "DE",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915163862406",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15163862406,
-  "parsedRaw" : "Country Code: 49 National Number: 15163862406"
-}, {
-  "input" : "90",
-  "region" : "JP",
-  "caseType" : "EDGE",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 90,
-  "parsedRaw" : "Country Code: 81 National Number: 90"
-}, {
-  "input" : "abc189",
-  "region" : "AU",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 189,
-  "parsedRaw" : "Country Code: 61 National Number: 189"
-}, {
-  "input" : "9070517393",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819070517393",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9070517393,
-  "parsedRaw" : "Country Code: 81 National Number: 9070517393"
-}, {
-  "input" : "7700210454",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700210454,
-  "parsedRaw" : "Country Code: 44 National Number: 7700210454"
-}, {
-  "input" : "abc29",
-  "region" : "KR",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 29,
-  "parsedRaw" : "Country Code: 82 National Number: 29"
-}, {
-  "input" : "612-8743-971",
-  "region" : "FR",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6128743971,
-  "parsedRaw" : "Country Code: 33 National Number: 6128743971"
-}, {
-  "input" : "abc738",
-  "region" : "KR",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 738,
-  "parsedRaw" : "Country Code: 82 National Number: 738"
-}, {
-  "input" : "412-8940-933",
-  "region" : "AU",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4128940933,
-  "parsedRaw" : "Country Code: 61 National Number: 4128940933"
-}, {
-  "input" : "4124316625",
-  "region" : "AU",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4124316625,
-  "parsedRaw" : "Country Code: 61 National Number: 4124316625"
-}, {
-  "input" : "2010496172",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2010496172,
-  "parsedRaw" : "Country Code: 1 National Number: 2010496172"
-}, {
-  "input" : "4129299780",
-  "region" : "AU",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4129299780,
-  "parsedRaw" : "Country Code: 61 National Number: 4129299780"
-}, {
-  "input" : "7700167655",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+447700167655",
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700167655,
-  "parsedRaw" : "Country Code: 44 National Number: 7700167655"
-}, {
-  "input" : "9090748779",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819090748779",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9090748779,
-  "parsedRaw" : "Country Code: 81 National Number: 9090748779"
-}, {
-  "input" : "01038536777",
-  "region" : "KR",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821038536777",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1038536777,
-  "parsedRaw" : "Country Code: 82 National Number: 1038536777"
-}, {
-  "input" : "15144152507",
-  "region" : "US",
-  "caseType" : "MISMATCH",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+15144152507",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 5144152507,
-  "parsedRaw" : "Country Code: 1 National Number: 5144152507"
-}, {
-  "input" : "010",
-  "region" : "KR",
-  "caseType" : "EDGE",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 10,
-  "parsedRaw" : "Country Code: 82 National Number: 10 Leading Zero(s): true"
-}, {
-  "input" : "abc709",
-  "region" : "IN",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 709,
-  "parsedRaw" : "Country Code: 91 National Number: 709"
-}, {
-  "input" : "6126905840",
-  "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6126905840,
-  "parsedRaw" : "Country Code: 33 National Number: 6126905840"
-}, {
-  "input" : "7700339983",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+447700339983",
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700339983,
-  "parsedRaw" : "Country Code: 44 National Number: 7700339983"
-}, {
-  "input" : "01069576656",
-  "region" : "KR",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821069576656",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1069576656,
-  "parsedRaw" : "Country Code: 82 National Number: 1069576656"
-}, {
-  "input" : "15139651126",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915139651126",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15139651126,
-  "parsedRaw" : "Country Code: 49 National Number: 15139651126"
-}, {
-  "input" : "2016479177",
-  "region" : "JP",
-  "caseType" : "MISMATCH",
-  "expectedValid" : true,
-  "expectedType" : "PAGER",
-  "expectedE164" : "+812016479177",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 2016479177,
-  "parsedRaw" : "Country Code: 81 National Number: 2016479177"
-}, {
-  "input" : "4129936203",
-  "region" : "AU",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4129936203,
-  "parsedRaw" : "Country Code: 61 National Number: 4129936203"
-}, {
-  "input" : "15119011448",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915119011448",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15119011448,
-  "parsedRaw" : "Country Code: 49 National Number: 15119011448"
-}, {
-  "input" : "201-9545-599",
-  "region" : "US",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12019545599",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2019545599,
-  "parsedRaw" : "Country Code: 1 National Number: 2019545599"
-}, {
-  "input" : "01095570393",
-  "region" : "GB",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 1095570393,
-  "parsedRaw" : "Country Code: 44 National Number: 1095570393"
-}, {
-  "input" : "abc370",
-  "region" : "GB",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 370,
-  "parsedRaw" : "Country Code: 44 National Number: 370"
-}, {
-  "input" : "15193228079",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915193228079",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15193228079,
-  "parsedRaw" : "Country Code: 49 National Number: 15193228079"
-}, {
-  "input" : "4165518706",
-  "region" : "CA",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+14165518706",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4165518706,
-  "parsedRaw" : "Country Code: 1 National Number: 4165518706"
-}, {
-  "input" : "4160250995",
-  "region" : "CA",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4160250995,
-  "parsedRaw" : "Country Code: 1 National Number: 4160250995"
-}, {
-  "input" : "4165591516",
-  "region" : "CA",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+14165591516",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4165591516,
-  "parsedRaw" : "Country Code: 1 National Number: 4165591516"
-}, {
-  "input" : "abc545",
-  "region" : "CA",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 545,
-  "parsedRaw" : "Country Code: 1 National Number: 545"
-}, {
-  "input" : "15148175168",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915148175168",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15148175168,
-  "parsedRaw" : "Country Code: 49 National Number: 15148175168"
-}, {
-  "input" : "7700-5496-85",
-  "region" : "GB",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700549685,
-  "parsedRaw" : "Country Code: 44 National Number: 7700549685"
-}, {
-  "input" : "010-4831-9459",
-  "region" : "KR",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821048319459",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1048319459,
-  "parsedRaw" : "Country Code: 82 National Number: 1048319459"
-}, {
-  "input" : "abc918",
-  "region" : "IN",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 918,
-  "parsedRaw" : "Country Code: 91 National Number: 918"
-}, {
-  "input" : "9123-2454-226",
-  "region" : "IN",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91232454226,
-  "parsedRaw" : "Country Code: 91 National Number: 91232454226"
-}, {
-  "input" : "9065128422",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819065128422",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9065128422,
-  "parsedRaw" : "Country Code: 81 National Number: 9065128422"
-}, {
-  "input" : "90-2417-8955",
-  "region" : "JP",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819024178955",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9024178955,
-  "parsedRaw" : "Country Code: 81 National Number: 9024178955"
-}, {
-  "input" : "abc414",
-  "region" : "JP",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 414,
-  "parsedRaw" : "Country Code: 81 National Number: 414"
-}, {
-  "input" : "612-9144-711",
-  "region" : "FR",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6129144711,
-  "parsedRaw" : "Country Code: 33 National Number: 6129144711"
-}, {
-  "input" : "15170919479",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915170919479",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15170919479,
-  "parsedRaw" : "Country Code: 49 National Number: 15170919479"
-}, {
-  "input" : "15141824912",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915141824912",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15141824912,
-  "parsedRaw" : "Country Code: 49 National Number: 15141824912"
-}, {
-  "input" : "abc81",
-  "region" : "GB",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 81,
-  "parsedRaw" : "Country Code: 44 National Number: 81"
-}, {
-  "input" : "6125091438",
-  "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6125091438,
-  "parsedRaw" : "Country Code: 33 National Number: 6125091438"
-}, {
-  "input" : "7700073575",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+447700073575",
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700073575,
-  "parsedRaw" : "Country Code: 44 National Number: 7700073575"
-}, {
-  "input" : "abc848",
-  "region" : "CA",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 848,
-  "parsedRaw" : "Country Code: 1 National Number: 848"
-}, {
-  "input" : "7700572813",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700572813,
-  "parsedRaw" : "Country Code: 44 National Number: 7700572813"
-}, {
-  "input" : "7700814428",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+447700814428",
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700814428,
-  "parsedRaw" : "Country Code: 44 National Number: 7700814428"
-}, {
-  "input" : "abc226",
-  "region" : "GB",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 226,
-  "parsedRaw" : "Country Code: 44 National Number: 226"
-}, {
-  "input" : "4169939053",
-  "region" : "CA",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+14169939053",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4169939053,
-  "parsedRaw" : "Country Code: 1 National Number: 4169939053"
-}, {
-  "input" : "15127443530",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915127443530",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15127443530,
-  "parsedRaw" : "Country Code: 49 National Number: 15127443530"
-}, {
-  "input" : "4121933559",
-  "region" : "AU",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4121933559,
-  "parsedRaw" : "Country Code: 61 National Number: 4121933559"
-}, {
-  "input" : "9033823317",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819033823317",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9033823317,
-  "parsedRaw" : "Country Code: 81 National Number: 9033823317"
-}, {
-  "input" : "6127174660",
-  "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6127174660,
-  "parsedRaw" : "Country Code: 33 National Number: 6127174660"
-}, {
-  "input" : "9093628337",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819093628337",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9093628337,
-  "parsedRaw" : "Country Code: 81 National Number: 9093628337"
-}, {
-  "input" : "01078680357",
-  "region" : "KR",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821078680357",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1078680357,
-  "parsedRaw" : "Country Code: 82 National Number: 1078680357"
-}, {
-  "input" : "abc662",
-  "region" : "CA",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 662,
-  "parsedRaw" : "Country Code: 1 National Number: 662"
-}, {
-  "input" : "91237126128",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91237126128,
-  "parsedRaw" : "Country Code: 91 National Number: 91237126128"
-}, {
-  "input" : "7700-7803-74",
-  "region" : "GB",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+447700780374",
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700780374,
-  "parsedRaw" : "Country Code: 44 National Number: 7700780374"
-}, {
-  "input" : "7700675803",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700675803,
-  "parsedRaw" : "Country Code: 44 National Number: 7700675803"
-}, {
-  "input" : "151-2554-4431",
-  "region" : "DE",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915125544431",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15125544431,
-  "parsedRaw" : "Country Code: 49 National Number: 15125544431"
-}, {
-  "input" : "01088506340",
-  "region" : "KR",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821088506340",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1088506340,
-  "parsedRaw" : "Country Code: 82 National Number: 1088506340"
-}, {
-  "input" : "91237934722",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91237934722,
-  "parsedRaw" : "Country Code: 91 National Number: 91237934722"
-}, {
-  "input" : "91237324692",
-  "region" : "FR",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 91237324692,
-  "parsedRaw" : "Country Code: 33 National Number: 91237324692"
-}, {
-  "input" : "7700-5715-73",
-  "region" : "GB",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700571573,
-  "parsedRaw" : "Country Code: 44 National Number: 7700571573"
-}, {
-  "input" : "6127648934",
-  "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6127648934,
-  "parsedRaw" : "Country Code: 33 National Number: 6127648934"
-}, {
-  "input" : "151",
-  "region" : "DE",
-  "caseType" : "EDGE",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 151,
-  "parsedRaw" : "Country Code: 49 National Number: 151"
-}, {
-  "input" : "4160875052",
-  "region" : "CA",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4160875052,
-  "parsedRaw" : "Country Code: 1 National Number: 4160875052"
-}, {
-  "input" : "15180928125",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915180928125",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15180928125,
-  "parsedRaw" : "Country Code: 49 National Number: 15180928125"
-}, {
-  "input" : "612-8722-093",
-  "region" : "FR",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6128722093,
-  "parsedRaw" : "Country Code: 33 National Number: 6128722093"
-}, {
-  "input" : "abc841",
-  "region" : "JP",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 841,
-  "parsedRaw" : "Country Code: 81 National Number: 841"
-}, {
-  "input" : "abc577",
-  "region" : "KR",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 577,
-  "parsedRaw" : "Country Code: 82 National Number: 577"
-}, {
-  "input" : "2010968496",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2010968496,
-  "parsedRaw" : "Country Code: 1 National Number: 2010968496"
-}, {
-  "input" : "4126810638",
-  "region" : "AU",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4126810638,
-  "parsedRaw" : "Country Code: 61 National Number: 4126810638"
-}, {
-  "input" : "010-6691-3488",
-  "region" : "KR",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821066913488",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1066913488,
-  "parsedRaw" : "Country Code: 82 National Number: 1066913488"
-}, {
-  "input" : "01088341348",
-  "region" : "KR",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821088341348",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1088341348,
-  "parsedRaw" : "Country Code: 82 National Number: 1088341348"
-}, {
-  "input" : "6129470668",
-  "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6129470668,
-  "parsedRaw" : "Country Code: 33 National Number: 6129470668"
-}, {
-  "input" : "91235099589",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91235099589,
-  "parsedRaw" : "Country Code: 91 National Number: 91235099589"
-}, {
-  "input" : "abc454",
-  "region" : "DE",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 454,
-  "parsedRaw" : "Country Code: 49 National Number: 454"
-}, {
-  "input" : "91237396985",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91237396985,
-  "parsedRaw" : "Country Code: 91 National Number: 91237396985"
-}, {
-  "input" : "abc562",
-  "region" : "US",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 562,
-  "parsedRaw" : "Country Code: 1 National Number: 562"
-}, {
-  "input" : "9092953204",
-  "region" : "CA",
-  "caseType" : "MISMATCH",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+19092953204",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 9092953204,
-  "parsedRaw" : "Country Code: 1 National Number: 9092953204"
-}, {
-  "input" : "4128740004",
-  "region" : "AU",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4128740004,
-  "parsedRaw" : "Country Code: 61 National Number: 4128740004"
-}, {
-  "input" : "6128031330",
-  "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6128031330,
-  "parsedRaw" : "Country Code: 33 National Number: 6128031330"
-}, {
-  "input" : "010-7175-9444",
-  "region" : "KR",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821071759444",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1071759444,
-  "parsedRaw" : "Country Code: 82 National Number: 1071759444"
-}, {
-  "input" : "201",
-  "region" : "US",
-  "caseType" : "EDGE",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 201,
-  "parsedRaw" : "Country Code: 1 National Number: 201"
-}, {
-  "input" : "612-7281-734",
-  "region" : "FR",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6127281734,
-  "parsedRaw" : "Country Code: 33 National Number: 6127281734"
-}, {
-  "input" : "7700570441",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700570441,
-  "parsedRaw" : "Country Code: 44 National Number: 7700570441"
-}, {
-  "input" : "15128550856",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915128550856",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15128550856,
-  "parsedRaw" : "Country Code: 49 National Number: 15128550856"
-}, {
-  "input" : "9007663175",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9007663175,
-  "parsedRaw" : "Country Code: 81 National Number: 9007663175"
-}, {
-  "input" : "412-5610-858",
-  "region" : "AU",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4125610858,
-  "parsedRaw" : "Country Code: 61 National Number: 4125610858"
-}, {
-  "input" : "abc661",
-  "region" : "JP",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 661,
-  "parsedRaw" : "Country Code: 81 National Number: 661"
-}, {
-  "input" : "7700531923",
-  "region" : "KR",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 7700531923,
-  "parsedRaw" : "Country Code: 82 National Number: 7700531923"
-}, {
-  "input" : "6122256549",
-  "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6122256549,
-  "parsedRaw" : "Country Code: 33 National Number: 6122256549"
-}, {
-  "input" : "abc419",
-  "region" : "AU",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 419,
-  "parsedRaw" : "Country Code: 61 National Number: 419"
-}, {
-  "input" : "abc514",
-  "region" : "AU",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 514,
-  "parsedRaw" : "Country Code: 61 National Number: 514"
-}, {
-  "input" : "9001083974",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9001083974,
-  "parsedRaw" : "Country Code: 81 National Number: 9001083974"
-}, {
-  "input" : "abc411",
-  "region" : "IN",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 411,
-  "parsedRaw" : "Country Code: 91 National Number: 411"
-}, {
-  "input" : "2016670791",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12016670791",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2016670791,
-  "parsedRaw" : "Country Code: 1 National Number: 2016670791"
-}, {
-  "input" : "7700117341",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+447700117341",
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700117341,
-  "parsedRaw" : "Country Code: 44 National Number: 7700117341"
-}, {
-  "input" : "612-9256-168",
-  "region" : "FR",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6129256168,
-  "parsedRaw" : "Country Code: 33 National Number: 6129256168"
-}, {
-  "input" : "151-2332-9078",
-  "region" : "DE",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915123329078",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15123329078,
-  "parsedRaw" : "Country Code: 49 National Number: 15123329078"
-}, {
-  "input" : "6128863144",
-  "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6128863144,
-  "parsedRaw" : "Country Code: 33 National Number: 6128863144"
-}, {
-  "input" : "91239024508",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91239024508,
-  "parsedRaw" : "Country Code: 91 National Number: 91239024508"
-}, {
-  "input" : "612-1805-043",
-  "region" : "FR",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6121805043,
-  "parsedRaw" : "Country Code: 33 National Number: 6121805043"
-}, {
-  "input" : "abc511",
-  "region" : "JP",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 511,
-  "parsedRaw" : "Country Code: 81 National Number: 511"
-}, {
-  "input" : "9056251336",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819056251336",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9056251336,
-  "parsedRaw" : "Country Code: 81 National Number: 9056251336"
-}, {
-  "input" : "6120212040",
-  "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6120212040,
-  "parsedRaw" : "Country Code: 33 National Number: 6120212040"
-}, {
-  "input" : "6127426908",
-  "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6127426908,
-  "parsedRaw" : "Country Code: 33 National Number: 6127426908"
-}, {
-  "input" : "2017971483",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12017971483",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2017971483,
-  "parsedRaw" : "Country Code: 1 National Number: 2017971483"
-}, {
-  "input" : "01028982880",
-  "region" : "FR",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 1028982880,
-  "parsedRaw" : "Country Code: 33 National Number: 1028982880"
-}, {
-  "input" : "7700-2318-18",
-  "region" : "GB",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700231818,
-  "parsedRaw" : "Country Code: 44 National Number: 7700231818"
-}, {
-  "input" : "9000037644",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9000037644,
-  "parsedRaw" : "Country Code: 81 National Number: 9000037644"
-}, {
-  "input" : "15164541382",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915164541382",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15164541382,
-  "parsedRaw" : "Country Code: 49 National Number: 15164541382"
-}, {
-  "input" : "416-2262-545",
-  "region" : "CA",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+14162262545",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4162262545,
-  "parsedRaw" : "Country Code: 1 National Number: 4162262545"
-}, {
-  "input" : "9123-5374-680",
-  "region" : "IN",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91235374680,
-  "parsedRaw" : "Country Code: 91 National Number: 91235374680"
-}, {
-  "input" : "4165098921",
-  "region" : "US",
-  "caseType" : "MISMATCH",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+14165098921",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4165098921,
-  "parsedRaw" : "Country Code: 1 National Number: 4165098921"
-}, {
-  "input" : "7700473873",
-  "region" : "US",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 7700473873,
-  "parsedRaw" : "Country Code: 1 National Number: 7700473873"
-}, {
-  "input" : "4163824247",
-  "region" : "CA",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+14163824247",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4163824247,
-  "parsedRaw" : "Country Code: 1 National Number: 4163824247"
-}, {
-  "input" : "abc77",
-  "region" : "GB",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 77,
-  "parsedRaw" : "Country Code: 44 National Number: 77"
-}, {
-  "input" : "abc688",
-  "region" : "FR",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 688,
-  "parsedRaw" : "Country Code: 33 National Number: 688"
-}, {
-  "input" : "2013619300",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12013619300",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2013619300,
-  "parsedRaw" : "Country Code: 1 National Number: 2013619300"
-}, {
-  "input" : "9096923387",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819096923387",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9096923387,
-  "parsedRaw" : "Country Code: 81 National Number: 9096923387"
-}, {
-  "input" : "412-6526-330",
-  "region" : "AU",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4126526330,
-  "parsedRaw" : "Country Code: 61 National Number: 4126526330"
-}, {
-  "input" : "7700-0649-94",
-  "region" : "GB",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+447700064994",
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700064994,
-  "parsedRaw" : "Country Code: 44 National Number: 7700064994"
-}, {
-  "input" : "2015581907",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12015581907",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2015581907,
-  "parsedRaw" : "Country Code: 1 National Number: 2015581907"
-}, {
-  "input" : "2019926905",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12019926905",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2019926905,
-  "parsedRaw" : "Country Code: 1 National Number: 2019926905"
-}, {
-  "input" : "4163801464",
-  "region" : "CA",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+14163801464",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4163801464,
-  "parsedRaw" : "Country Code: 1 National Number: 4163801464"
-}, {
-  "input" : "010-7137-8507",
-  "region" : "KR",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+821071378507",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1071378507,
-  "parsedRaw" : "Country Code: 82 National Number: 1071378507"
-}, {
-  "input" : "15117146317",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915117146317",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15117146317,
-  "parsedRaw" : "Country Code: 49 National Number: 15117146317"
-}, {
-  "input" : "9078211431",
-  "region" : "IN",
-  "caseType" : "MISMATCH",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+919078211431",
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 9078211431,
-  "parsedRaw" : "Country Code: 91 National Number: 9078211431"
-}, {
-  "input" : "2011830285",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2011830285,
-  "parsedRaw" : "Country Code: 1 National Number: 2011830285"
-}, {
-  "input" : "2014562816",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12014562816",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2014562816,
-  "parsedRaw" : "Country Code: 1 National Number: 2014562816"
-}, {
-  "input" : "010-0435-9109",
-  "region" : "KR",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1004359109,
-  "parsedRaw" : "Country Code: 82 National Number: 1004359109"
-}, {
-  "input" : "4126351421",
-  "region" : "AU",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4126351421,
-  "parsedRaw" : "Country Code: 61 National Number: 4126351421"
-}, {
-  "input" : "91234071841",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91234071841,
-  "parsedRaw" : "Country Code: 91 National Number: 91234071841"
-}, {
-  "input" : "201-9970-458",
-  "region" : "US",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12019970458",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2019970458,
-  "parsedRaw" : "Country Code: 1 National Number: 2019970458"
-}, {
-  "input" : "4125947602",
-  "region" : "AU",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4125947602,
-  "parsedRaw" : "Country Code: 61 National Number: 4125947602"
-}, {
-  "input" : "abc615",
-  "region" : "AU",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 615,
-  "parsedRaw" : "Country Code: 61 National Number: 615"
-}, {
-  "input" : "91234270647",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91234270647,
-  "parsedRaw" : "Country Code: 91 National Number: 91234270647"
-}, {
-  "input" : "abc448",
-  "region" : "US",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 448,
-  "parsedRaw" : "Country Code: 1 National Number: 448"
-}, {
-  "input" : "9085126469",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819085126469",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9085126469,
-  "parsedRaw" : "Country Code: 81 National Number: 9085126469"
-}, {
-  "input" : "9007306258",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9007306258,
-  "parsedRaw" : "Country Code: 81 National Number: 9007306258"
-}, {
-  "input" : "4120241013",
-  "region" : "AU",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4120241013,
-  "parsedRaw" : "Country Code: 61 National Number: 4120241013"
-}, {
-  "input" : "7700313501",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+447700313501",
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700313501,
-  "parsedRaw" : "Country Code: 44 National Number: 7700313501"
-}, {
-  "input" : "15101601333",
-  "region" : "KR",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 15101601333,
-  "parsedRaw" : "Country Code: 82 National Number: 15101601333"
-}, {
-  "input" : "151",
-  "region" : "DE",
-  "caseType" : "EDGE",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 151,
-  "parsedRaw" : "Country Code: 49 National Number: 151"
-}, {
-  "input" : "151-1338-0048",
-  "region" : "DE",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915113380048",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15113380048,
-  "parsedRaw" : "Country Code: 49 National Number: 15113380048"
-}, {
-  "input" : "4163720601",
-  "region" : "CA",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+14163720601",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4163720601,
-  "parsedRaw" : "Country Code: 1 National Number: 4163720601"
-}, {
-  "input" : "91235370205",
-  "region" : "AU",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 91235370205,
-  "parsedRaw" : "Country Code: 61 National Number: 91235370205"
-}, {
-  "input" : "6128302229",
-  "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6128302229,
-  "parsedRaw" : "Country Code: 33 National Number: 6128302229"
-}, {
-  "input" : "abc774",
-  "region" : "GB",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 774,
-  "parsedRaw" : "Country Code: 44 National Number: 774"
-}, {
-  "input" : "abc515",
-  "region" : "FR",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 515,
-  "parsedRaw" : "Country Code: 33 National Number: 515"
-}, {
-  "input" : "2016063732",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12016063732",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2016063732,
-  "parsedRaw" : "Country Code: 1 National Number: 2016063732"
-}, {
-  "input" : "2012351908",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12012351908",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2012351908,
-  "parsedRaw" : "Country Code: 1 National Number: 2012351908"
-}, {
-  "input" : "9072519098",
-  "region" : "FR",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 9072519098,
-  "parsedRaw" : "Country Code: 33 National Number: 9072519098"
-}, {
-  "input" : "91235561117",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91235561117,
-  "parsedRaw" : "Country Code: 91 National Number: 91235561117"
-}, {
-  "input" : "abc249",
-  "region" : "AU",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 249,
-  "parsedRaw" : "Country Code: 61 National Number: 249"
-}, {
-  "input" : "6124917100",
-  "region" : "KR",
-  "caseType" : "MISMATCH",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE",
-  "expectedE164" : "+826124917100",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 6124917100,
-  "parsedRaw" : "Country Code: 82 National Number: 6124917100"
-}, {
-  "input" : "416-0012-740",
-  "region" : "CA",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4160012740,
-  "parsedRaw" : "Country Code: 1 National Number: 4160012740"
-}, {
-  "input" : "abc865",
-  "region" : "IN",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 865,
-  "parsedRaw" : "Country Code: 91 National Number: 865"
-}, {
-  "input" : "91235857159",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91235857159,
-  "parsedRaw" : "Country Code: 91 National Number: 91235857159"
-}, {
-  "input" : "15177625240",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915177625240",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15177625240,
-  "parsedRaw" : "Country Code: 49 National Number: 15177625240"
-}, {
-  "input" : "abc762",
-  "region" : "GB",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 762,
-  "parsedRaw" : "Country Code: 44 National Number: 762"
-}, {
-  "input" : "91238921186",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91238921186,
-  "parsedRaw" : "Country Code: 91 National Number: 91238921186"
-}, {
-  "input" : "7700245269",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700245269,
-  "parsedRaw" : "Country Code: 44 National Number: 7700245269"
-}, {
-  "input" : "7700776595",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+447700776595",
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700776595,
-  "parsedRaw" : "Country Code: 44 National Number: 7700776595"
-}, {
-  "input" : "9085021529",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819085021529",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9085021529,
-  "parsedRaw" : "Country Code: 81 National Number: 9085021529"
-}, {
-  "input" : "201-4936-593",
-  "region" : "US",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12014936593",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2014936593,
-  "parsedRaw" : "Country Code: 1 National Number: 2014936593"
-}, {
-  "input" : "7700-2841-19",
-  "region" : "GB",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700284119,
-  "parsedRaw" : "Country Code: 44 National Number: 7700284119"
-}, {
-  "input" : "9123-2009-353",
-  "region" : "IN",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91232009353,
-  "parsedRaw" : "Country Code: 91 National Number: 91232009353"
-}, {
-  "input" : "15128016468",
-  "region" : "DE",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+4915128016468",
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15128016468,
-  "parsedRaw" : "Country Code: 49 National Number: 15128016468"
-}, {
-  "input" : "412-6137-418",
-  "region" : "AU",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4126137418,
-  "parsedRaw" : "Country Code: 61 National Number: 4126137418"
-}, {
-  "input" : "201",
-  "region" : "US",
-  "caseType" : "EDGE",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 201,
-  "parsedRaw" : "Country Code: 1 National Number: 201"
-}, {
-  "input" : "91238985393",
-  "region" : "IN",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91238985393,
-  "parsedRaw" : "Country Code: 91 National Number: 91238985393"
-}, {
-  "input" : "2016917941",
-  "region" : "FR",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 2016917941,
-  "parsedRaw" : "Country Code: 33 National Number: 2016917941"
 }, {
   "input" : "9123",
   "region" : "IN",
@@ -2539,463 +1939,1063 @@
   "parsedNationalNumber" : 9123,
   "parsedRaw" : "Country Code: 91 National Number: 9123"
 }, {
-  "input" : "2013017081",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12013017081",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2013017081,
-  "parsedRaw" : "Country Code: 1 National Number: 2013017081"
-}, {
-  "input" : "412-8500-133",
-  "region" : "AU",
-  "caseType" : "FORMATTED",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4128500133,
-  "parsedRaw" : "Country Code: 61 National Number: 4128500133"
-}, {
-  "input" : "4166193175",
-  "region" : "CA",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+14166193175",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4166193175,
-  "parsedRaw" : "Country Code: 1 National Number: 4166193175"
-}, {
-  "input" : "2013914836",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12013914836",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2013914836,
-  "parsedRaw" : "Country Code: 1 National Number: 2013914836"
-}, {
-  "input" : "9011964067",
-  "region" : "JP",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+819011964067",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9011964067,
-  "parsedRaw" : "Country Code: 81 National Number: 9011964067"
-}, {
-  "input" : "151-6511-3825",
+  "input" : "151-7115-8641",
   "region" : "DE",
   "caseType" : "FORMATTED",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+4915165113825",
+  "expectedE164" : "+4915171158641",
   "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 15165113825,
-  "parsedRaw" : "Country Code: 49 National Number: 15165113825"
+  "parsedNationalNumber" : 15171158641,
+  "parsedRaw" : "Country Code: 49 National Number: 15171158641"
 }, {
-  "input" : "abc555",
-  "region" : "JP",
+  "input" : "4169966640",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14169966640",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4169966640,
+  "parsedRaw" : "Country Code: 1 National Number: 4169966640"
+}, {
+  "input" : "7700-9046-73",
+  "region" : "GB",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700904673,
+  "parsedRaw" : "Country Code: 44 National Number: 7700904673"
+}, {
+  "input" : "9123-9035-331",
+  "region" : "IN",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91239035331,
+  "parsedRaw" : "Country Code: 91 National Number: 91239035331"
+}, {
+  "input" : "7700-7878-22",
+  "region" : "GB",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+447700787822",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700787822,
+  "parsedRaw" : "Country Code: 44 National Number: 7700787822"
+}, {
+  "input" : "abc545",
+  "region" : "DE",
   "caseType" : "INVALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 555,
-  "parsedRaw" : "Country Code: 81 National Number: 555"
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 545,
+  "parsedRaw" : "Country Code: 49 National Number: 545"
 }, {
-  "input" : "90-4162-7259",
-  "region" : "JP",
-  "caseType" : "FORMATTED",
+  "input" : "15199788954",
+  "region" : "AU",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 15199788954,
+  "parsedRaw" : "Country Code: 61 National Number: 15199788954"
+}, {
+  "input" : "2014350146",
+  "region" : "US",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12014350146",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2014350146,
+  "parsedRaw" : "Country Code: 1 National Number: 2014350146"
+}, {
+  "input" : "abc275",
+  "region" : "DE",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 275,
+  "parsedRaw" : "Country Code: 49 National Number: 275"
+}, {
+  "input" : "abc982",
+  "region" : "IN",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 982,
+  "parsedRaw" : "Country Code: 91 National Number: 982"
+}, {
+  "input" : "9059766704",
+  "region" : "CA",
+  "caseType" : "MISMATCH",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+19059766704",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 9059766704,
+  "parsedRaw" : "Country Code: 1 National Number: 9059766704"
+}, {
+  "input" : "15196046267",
+  "region" : "DE",
+  "caseType" : "VALID",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+819041627259",
-  "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9041627259,
-  "parsedRaw" : "Country Code: 81 National Number: 9041627259"
+  "expectedE164" : "+4915196046267",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15196046267,
+  "parsedRaw" : "Country Code: 49 National Number: 15196046267"
 }, {
-  "input" : "7700584355",
+  "input" : "9015490019",
+  "region" : "IN",
+  "caseType" : "MISMATCH",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+919015490019",
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 9015490019,
+  "parsedRaw" : "Country Code: 91 National Number: 9015490019"
+}, {
+  "input" : "91239413032",
+  "region" : "IN",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91239413032,
+  "parsedRaw" : "Country Code: 91 National Number: 91239413032"
+}, {
+  "input" : "7700807898",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+447700807898",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700807898,
+  "parsedRaw" : "Country Code: 44 National Number: 7700807898"
+}, {
+  "input" : "7700024102",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+447700024102",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700024102,
+  "parsedRaw" : "Country Code: 44 National Number: 7700024102"
+}, {
+  "input" : "7700441663",
   "region" : "GB",
   "caseType" : "VALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
   "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700584355,
-  "parsedRaw" : "Country Code: 44 National Number: 7700584355"
+  "parsedNationalNumber" : 7700441663,
+  "parsedRaw" : "Country Code: 44 National Number: 7700441663"
 }, {
-  "input" : "7700430864",
+  "input" : "7700439625",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700439625,
+  "parsedRaw" : "Country Code: 44 National Number: 7700439625"
+}, {
+  "input" : "9054738101",
+  "region" : "JP",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819054738101",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9054738101,
+  "parsedRaw" : "Country Code: 81 National Number: 9054738101"
+}, {
+  "input" : "9123-0240-986",
+  "region" : "IN",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91230240986,
+  "parsedRaw" : "Country Code: 91 National Number: 91230240986"
+}, {
+  "input" : "7700-4180-60",
+  "region" : "GB",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700418060,
+  "parsedRaw" : "Country Code: 44 National Number: 7700418060"
+}, {
+  "input" : "abc371",
   "region" : "FR",
-  "caseType" : "MISMATCH",
+  "caseType" : "INVALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
   "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 7700430864,
-  "parsedRaw" : "Country Code: 33 National Number: 7700430864"
+  "parsedNationalNumber" : 371,
+  "parsedRaw" : "Country Code: 33 National Number: 371"
 }, {
-  "input" : "151",
-  "region" : "DE",
+  "input" : "412",
+  "region" : "AU",
   "caseType" : "EDGE",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 151,
-  "parsedRaw" : "Country Code: 49 National Number: 151"
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 412,
+  "parsedRaw" : "Country Code: 61 National Number: 412"
 }, {
-  "input" : "abc484",
-  "region" : "AU",
-  "caseType" : "INVALID",
+  "input" : "90",
+  "region" : "JP",
+  "caseType" : "EDGE",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 484,
-  "parsedRaw" : "Country Code: 61 National Number: 484"
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 90,
+  "parsedRaw" : "Country Code: 81 National Number: 90"
 }, {
-  "input" : "90-3001-9353",
+  "input" : "90-5389-0457",
   "region" : "JP",
   "caseType" : "FORMATTED",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+819030019353",
+  "expectedE164" : "+819053890457",
   "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9030019353,
-  "parsedRaw" : "Country Code: 81 National Number: 9030019353"
+  "parsedNationalNumber" : 9053890457,
+  "parsedRaw" : "Country Code: 81 National Number: 9053890457"
 }, {
-  "input" : "9049896496",
+  "input" : "abc969",
+  "region" : "JP",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 969,
+  "parsedRaw" : "Country Code: 81 National Number: 969"
+}, {
+  "input" : "7700528041",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700528041,
+  "parsedRaw" : "Country Code: 44 National Number: 7700528041"
+}, {
+  "input" : "91234646555",
+  "region" : "CA",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 91234646555,
+  "parsedRaw" : "Country Code: 1 National Number: 91234646555"
+}, {
+  "input" : "9123-3513-358",
+  "region" : "IN",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91233513358,
+  "parsedRaw" : "Country Code: 91 National Number: 91233513358"
+}, {
+  "input" : "416-2724-965",
+  "region" : "CA",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14162724965",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4162724965,
+  "parsedRaw" : "Country Code: 1 National Number: 4162724965"
+}, {
+  "input" : "91237797397",
+  "region" : "IN",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 91237797397,
+  "parsedRaw" : "Country Code: 91 National Number: 91237797397"
+}, {
+  "input" : "2015459050",
+  "region" : "US",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12015459050",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2015459050,
+  "parsedRaw" : "Country Code: 1 National Number: 2015459050"
+}, {
+  "input" : "9026579842",
   "region" : "JP",
   "caseType" : "VALID",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+819049896496",
+  "expectedE164" : "+819026579842",
   "parsedCountryCode" : 81,
-  "parsedNationalNumber" : 9049896496,
-  "parsedRaw" : "Country Code: 81 National Number: 9049896496"
+  "parsedNationalNumber" : 9026579842,
+  "parsedRaw" : "Country Code: 81 National Number: 9026579842"
 }, {
-  "input" : "2011103085",
+  "input" : "201",
+  "region" : "US",
+  "caseType" : "EDGE",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 201,
+  "parsedRaw" : "Country Code: 1 National Number: 201"
+}, {
+  "input" : "201-4864-135",
+  "region" : "US",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12014864135",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2014864135,
+  "parsedRaw" : "Country Code: 1 National Number: 2014864135"
+}, {
+  "input" : "6121083759",
   "region" : "FR",
-  "caseType" : "MISMATCH",
+  "caseType" : "VALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
   "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 2011103085,
-  "parsedRaw" : "Country Code: 33 National Number: 2011103085"
+  "parsedNationalNumber" : 6121083759,
+  "parsedRaw" : "Country Code: 33 National Number: 6121083759"
 }, {
-  "input" : "6121580006",
-  "region" : "AU",
-  "caseType" : "MISMATCH",
+  "input" : "7700277510",
+  "region" : "GB",
+  "caseType" : "VALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 6121580006,
-  "parsedRaw" : "Country Code: 61 National Number: 6121580006"
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700277510,
+  "parsedRaw" : "Country Code: 44 National Number: 7700277510"
 }, {
-  "input" : "4165673276",
+  "input" : "4166608953",
   "region" : "CA",
   "caseType" : "VALID",
   "expectedValid" : true,
   "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+14165673276",
+  "expectedE164" : "+14166608953",
   "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4165673276,
-  "parsedRaw" : "Country Code: 1 National Number: 4165673276"
+  "parsedNationalNumber" : 4166608953,
+  "parsedRaw" : "Country Code: 1 National Number: 4166608953"
 }, {
-  "input" : "abc612",
+  "input" : "15163785862",
+  "region" : "DE",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915163785862",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15163785862,
+  "parsedRaw" : "Country Code: 49 National Number: 15163785862"
+}, {
+  "input" : "abc906",
+  "region" : "CA",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 906,
+  "parsedRaw" : "Country Code: 1 National Number: 906"
+}, {
+  "input" : "abc73",
   "region" : "DE",
   "caseType" : "INVALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
   "parsedCountryCode" : 49,
-  "parsedNationalNumber" : 612,
-  "parsedRaw" : "Country Code: 49 National Number: 612"
+  "parsedNationalNumber" : 73,
+  "parsedRaw" : "Country Code: 49 National Number: 73"
 }, {
-  "input" : "612-8750-853",
+  "input" : "4120030832",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4120030832,
+  "parsedRaw" : "Country Code: 61 National Number: 4120030832"
+}, {
+  "input" : "2013691288",
+  "region" : "US",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12013691288",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2013691288,
+  "parsedRaw" : "Country Code: 1 National Number: 2013691288"
+}, {
+  "input" : "4120209113",
+  "region" : "DE",
+  "caseType" : "MISMATCH",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE",
+  "expectedE164" : "+494120209113",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 4120209113,
+  "parsedRaw" : "Country Code: 49 National Number: 4120209113"
+}, {
+  "input" : "15131703438",
+  "region" : "GB",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 15131703438,
+  "parsedRaw" : "Country Code: 44 National Number: 15131703438"
+}, {
+  "input" : "612-4418-022",
   "region" : "FR",
   "caseType" : "FORMATTED",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
   "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6128750853,
-  "parsedRaw" : "Country Code: 33 National Number: 6128750853"
+  "parsedNationalNumber" : 6124418022,
+  "parsedRaw" : "Country Code: 33 National Number: 6124418022"
 }, {
-  "input" : "612-9277-089",
-  "region" : "FR",
+  "input" : "7700157393",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+447700157393",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700157393,
+  "parsedRaw" : "Country Code: 44 National Number: 7700157393"
+}, {
+  "input" : "201-2118-786",
+  "region" : "US",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12012118786",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2012118786,
+  "parsedRaw" : "Country Code: 1 National Number: 2012118786"
+}, {
+  "input" : "4129945730",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4129945730,
+  "parsedRaw" : "Country Code: 61 National Number: 4129945730"
+}, {
+  "input" : "4165804480",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14165804480",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4165804480,
+  "parsedRaw" : "Country Code: 1 National Number: 4165804480"
+}, {
+  "input" : "4168735087",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14168735087",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4168735087,
+  "parsedRaw" : "Country Code: 1 National Number: 4168735087"
+}, {
+  "input" : "7700-6639-51",
+  "region" : "GB",
   "caseType" : "FORMATTED",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6129277089,
-  "parsedRaw" : "Country Code: 33 National Number: 6129277089"
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700663951,
+  "parsedRaw" : "Country Code: 44 National Number: 7700663951"
 }, {
-  "input" : "010-6753-6211",
-  "region" : "KR",
+  "input" : "90-5023-9987",
+  "region" : "JP",
   "caseType" : "FORMATTED",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821067536211",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1067536211,
-  "parsedRaw" : "Country Code: 82 National Number: 1067536211"
+  "expectedE164" : "+819050239987",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9050239987,
+  "parsedRaw" : "Country Code: 81 National Number: 9050239987"
 }, {
-  "input" : "91237112605",
-  "region" : "IN",
+  "input" : "6123242420",
+  "region" : "FR",
   "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6123242420,
+  "parsedRaw" : "Country Code: 33 National Number: 6123242420"
+}, {
+  "input" : "9123-6388-307",
+  "region" : "IN",
+  "caseType" : "FORMATTED",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
   "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91237112605,
-  "parsedRaw" : "Country Code: 91 National Number: 91237112605"
+  "parsedNationalNumber" : 91236388307,
+  "parsedRaw" : "Country Code: 91 National Number: 91236388307"
 }, {
-  "input" : "abc918",
-  "region" : "AU",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 918,
-  "parsedRaw" : "Country Code: 61 National Number: 918"
-}, {
-  "input" : "7700-1769-06",
+  "input" : "7700838820",
   "region" : "GB",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+447700176906",
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700176906,
-  "parsedRaw" : "Country Code: 44 National Number: 7700176906"
-}, {
-  "input" : "01090453330",
-  "region" : "KR",
   "caseType" : "VALID",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821090453330",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1090453330,
-  "parsedRaw" : "Country Code: 82 National Number: 1090453330"
+  "expectedE164" : "+447700838820",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700838820,
+  "parsedRaw" : "Country Code: 44 National Number: 7700838820"
 }, {
-  "input" : "4162803389",
+  "input" : "4165995117",
   "region" : "CA",
   "caseType" : "VALID",
   "expectedValid" : true,
   "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+14162803389",
+  "expectedE164" : "+14165995117",
   "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4162803389,
-  "parsedRaw" : "Country Code: 1 National Number: 4162803389"
+  "parsedNationalNumber" : 4165995117,
+  "parsedRaw" : "Country Code: 1 National Number: 4165995117"
 }, {
-  "input" : "abc152",
-  "region" : "FR",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 152,
-  "parsedRaw" : "Country Code: 33 National Number: 152"
-}, {
-  "input" : "4127129984",
-  "region" : "AU",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4127129984,
-  "parsedRaw" : "Country Code: 61 National Number: 4127129984"
-}, {
-  "input" : "2013503402",
-  "region" : "US",
+  "input" : "15143037312",
+  "region" : "DE",
   "caseType" : "VALID",
   "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12013503402",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2013503402,
-  "parsedRaw" : "Country Code: 1 National Number: 2013503402"
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915143037312",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15143037312,
+  "parsedRaw" : "Country Code: 49 National Number: 15143037312"
 }, {
-  "input" : "010-6057-2084",
+  "input" : "4169100201",
+  "region" : "KR",
+  "caseType" : "MISMATCH",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE",
+  "expectedE164" : "+824169100201",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 4169100201,
+  "parsedRaw" : "Country Code: 82 National Number: 4169100201"
+}, {
+  "input" : "010-4947-7316",
   "region" : "KR",
   "caseType" : "FORMATTED",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821060572084",
+  "expectedE164" : "+821049477316",
   "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1060572084,
-  "parsedRaw" : "Country Code: 82 National Number: 1060572084"
+  "parsedNationalNumber" : 1049477316,
+  "parsedRaw" : "Country Code: 82 National Number: 1049477316"
 }, {
-  "input" : "416-8978-988",
-  "region" : "CA",
-  "caseType" : "FORMATTED",
-  "expectedValid" : true,
-  "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+14168978988",
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 4168978988,
-  "parsedRaw" : "Country Code: 1 National Number: 4168978988"
-}, {
-  "input" : "7700868980",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : true,
-  "expectedType" : "MOBILE",
-  "expectedE164" : "+447700868980",
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700868980,
-  "parsedRaw" : "Country Code: 44 National Number: 7700868980"
-}, {
-  "input" : "abc803",
-  "region" : "AU",
+  "input" : "abc975",
+  "region" : "US",
   "caseType" : "INVALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 803,
-  "parsedRaw" : "Country Code: 61 National Number: 803"
-}, {
-  "input" : "4160951134",
-  "region" : "GB",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 4160951134,
-  "parsedRaw" : "Country Code: 44 National Number: 4160951134"
-}, {
-  "input" : "2010368193",
-  "region" : "US",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
   "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2010368193,
-  "parsedRaw" : "Country Code: 1 National Number: 2010368193"
+  "parsedNationalNumber" : 975,
+  "parsedRaw" : "Country Code: 1 National Number: 975"
 }, {
-  "input" : "7700266040",
-  "region" : "GB",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 44,
-  "parsedNationalNumber" : 7700266040,
-  "parsedRaw" : "Country Code: 44 National Number: 7700266040"
+  "input" : "201-6298-638",
+  "region" : "US",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12016298638",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2016298638,
+  "parsedRaw" : "Country Code: 1 National Number: 2016298638"
 }, {
-  "input" : "6128922591",
+  "input" : "612-1676-458",
   "region" : "FR",
-  "caseType" : "VALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6128922591,
-  "parsedRaw" : "Country Code: 33 National Number: 6128922591"
-}, {
-  "input" : "412-2280-923",
-  "region" : "AU",
   "caseType" : "FORMATTED",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 4122280923,
-  "parsedRaw" : "Country Code: 61 National Number: 4122280923"
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6121676458,
+  "parsedRaw" : "Country Code: 33 National Number: 6121676458"
 }, {
-  "input" : "01027414055",
-  "region" : "KR",
+  "input" : "2016711240",
+  "region" : "US",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12016711240",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2016711240,
+  "parsedRaw" : "Country Code: 1 National Number: 2016711240"
+}, {
+  "input" : "15144695225",
+  "region" : "DE",
   "caseType" : "VALID",
   "expectedValid" : true,
   "expectedType" : "MOBILE",
-  "expectedE164" : "+821027414055",
-  "parsedCountryCode" : 82,
-  "parsedNationalNumber" : 1027414055,
-  "parsedRaw" : "Country Code: 82 National Number: 1027414055"
+  "expectedE164" : "+4915144695225",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15144695225,
+  "parsedRaw" : "Country Code: 49 National Number: 15144695225"
 }, {
-  "input" : "abc758",
-  "region" : "AU",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 758,
-  "parsedRaw" : "Country Code: 61 National Number: 758"
-}, {
-  "input" : "7700876469",
+  "input" : "201-9592-454",
   "region" : "US",
-  "caseType" : "MISMATCH",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 7700876469,
-  "parsedRaw" : "Country Code: 1 National Number: 7700876469"
-}, {
-  "input" : "2019939928",
-  "region" : "CA",
-  "caseType" : "MISMATCH",
+  "caseType" : "FORMATTED",
   "expectedValid" : true,
   "expectedType" : "FIXED_LINE_OR_MOBILE",
-  "expectedE164" : "+12019939928",
+  "expectedE164" : "+12019592454",
   "parsedCountryCode" : 1,
-  "parsedNationalNumber" : 2019939928,
-  "parsedRaw" : "Country Code: 1 National Number: 2019939928"
+  "parsedNationalNumber" : 2019592454,
+  "parsedRaw" : "Country Code: 1 National Number: 2019592454"
 }, {
-  "input" : "abc396",
-  "region" : "AU",
-  "caseType" : "INVALID",
-  "expectedValid" : false,
-  "expectedType" : null,
-  "expectedE164" : null,
-  "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 396,
-  "parsedRaw" : "Country Code: 61 National Number: 396"
-}, {
-  "input" : "6129266818",
-  "region" : "FR",
+  "input" : "7700894248",
+  "region" : "GB",
   "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+447700894248",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700894248,
+  "parsedRaw" : "Country Code: 44 National Number: 7700894248"
+}, {
+  "input" : "91237787621",
+  "region" : "JP",
+  "caseType" : "MISMATCH",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
-  "parsedCountryCode" : 33,
-  "parsedNationalNumber" : 6129266818,
-  "parsedRaw" : "Country Code: 33 National Number: 6129266818"
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 91237787621,
+  "parsedRaw" : "Country Code: 81 National Number: 91237787621"
 }, {
-  "input" : "91230308173",
+  "input" : "90-7806-6596",
+  "region" : "JP",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819078066596",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9078066596,
+  "parsedRaw" : "Country Code: 81 National Number: 9078066596"
+}, {
+  "input" : "9123-6901-199",
   "region" : "IN",
-  "caseType" : "VALID",
+  "caseType" : "FORMATTED",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
   "parsedCountryCode" : 91,
-  "parsedNationalNumber" : 91230308173,
-  "parsedRaw" : "Country Code: 91 National Number: 91230308173"
+  "parsedNationalNumber" : 91236901199,
+  "parsedRaw" : "Country Code: 91 National Number: 91236901199"
 }, {
-  "input" : "abc588",
-  "region" : "AU",
+  "input" : "6125945738",
+  "region" : "JP",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 6125945738,
+  "parsedRaw" : "Country Code: 81 National Number: 6125945738"
+}, {
+  "input" : "151-8564-0384",
+  "region" : "DE",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915185640384",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15185640384,
+  "parsedRaw" : "Country Code: 49 National Number: 15185640384"
+}, {
+  "input" : "6127182563",
+  "region" : "KR",
+  "caseType" : "MISMATCH",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE",
+  "expectedE164" : "+826127182563",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 6127182563,
+  "parsedRaw" : "Country Code: 82 National Number: 6127182563"
+}, {
+  "input" : "4160793737",
+  "region" : "DE",
+  "caseType" : "MISMATCH",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE",
+  "expectedE164" : "+494160793737",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 4160793737,
+  "parsedRaw" : "Country Code: 49 National Number: 4160793737"
+}, {
+  "input" : "6123341245",
+  "region" : "IN",
+  "caseType" : "MISMATCH",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE",
+  "expectedE164" : "+916123341245",
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 6123341245,
+  "parsedRaw" : "Country Code: 91 National Number: 6123341245"
+}, {
+  "input" : "abc366",
+  "region" : "US",
   "caseType" : "INVALID",
   "expectedValid" : false,
   "expectedType" : null,
   "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 366,
+  "parsedRaw" : "Country Code: 1 National Number: 366"
+}, {
+  "input" : "201-7981-431",
+  "region" : "US",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+12017981431",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2017981431,
+  "parsedRaw" : "Country Code: 1 National Number: 2017981431"
+}, {
+  "input" : "201-0791-745",
+  "region" : "US",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 2010791745,
+  "parsedRaw" : "Country Code: 1 National Number: 2010791745"
+}, {
+  "input" : "abc158",
+  "region" : "IN",
+  "caseType" : "INVALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 91,
+  "parsedNationalNumber" : 158,
+  "parsedRaw" : "Country Code: 91 National Number: 158"
+}, {
+  "input" : "4126610475",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
   "parsedCountryCode" : 61,
-  "parsedNationalNumber" : 588,
-  "parsedRaw" : "Country Code: 61 National Number: 588"
+  "parsedNationalNumber" : 4126610475,
+  "parsedRaw" : "Country Code: 61 National Number: 4126610475"
+}, {
+  "input" : "9019445168",
+  "region" : "JP",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819019445168",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9019445168,
+  "parsedRaw" : "Country Code: 81 National Number: 9019445168"
+}, {
+  "input" : "7700289835",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700289835,
+  "parsedRaw" : "Country Code: 44 National Number: 7700289835"
+}, {
+  "input" : "90-3581-4676",
+  "region" : "JP",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819035814676",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9035814676,
+  "parsedRaw" : "Country Code: 81 National Number: 9035814676"
+}, {
+  "input" : "15105629365",
+  "region" : "DE",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915105629365",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15105629365,
+  "parsedRaw" : "Country Code: 49 National Number: 15105629365"
+}, {
+  "input" : "4124671524",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4124671524,
+  "parsedRaw" : "Country Code: 61 National Number: 4124671524"
+}, {
+  "input" : "010-9682-4524",
+  "region" : "KR",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+821096824524",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 1096824524,
+  "parsedRaw" : "Country Code: 82 National Number: 1096824524"
+}, {
+  "input" : "7700-1765-27",
+  "region" : "GB",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+447700176527",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700176527,
+  "parsedRaw" : "Country Code: 44 National Number: 7700176527"
+}, {
+  "input" : "01064248050",
+  "region" : "FR",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 1064248050,
+  "parsedRaw" : "Country Code: 33 National Number: 1064248050"
+}, {
+  "input" : "9041833205",
+  "region" : "JP",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819041833205",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9041833205,
+  "parsedRaw" : "Country Code: 81 National Number: 9041833205"
+}, {
+  "input" : "9092976844",
+  "region" : "JP",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819092976844",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9092976844,
+  "parsedRaw" : "Country Code: 81 National Number: 9092976844"
+}, {
+  "input" : "6123270008",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6123270008,
+  "parsedRaw" : "Country Code: 33 National Number: 6123270008"
+}, {
+  "input" : "416-9058-384",
+  "region" : "CA",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14169058384",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4169058384,
+  "parsedRaw" : "Country Code: 1 National Number: 4169058384"
+}, {
+  "input" : "151-3281-9412",
+  "region" : "DE",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915132819412",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15132819412,
+  "parsedRaw" : "Country Code: 49 National Number: 15132819412"
+}, {
+  "input" : "7700065710",
+  "region" : "GB",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+447700065710",
+  "parsedCountryCode" : 44,
+  "parsedNationalNumber" : 7700065710,
+  "parsedRaw" : "Country Code: 44 National Number: 7700065710"
+}, {
+  "input" : "6128858225",
+  "region" : "CA",
+  "caseType" : "MISMATCH",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+16128858225",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 6128858225,
+  "parsedRaw" : "Country Code: 1 National Number: 6128858225"
+}, {
+  "input" : "4129471423",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4129471423,
+  "parsedRaw" : "Country Code: 61 National Number: 4129471423"
+}, {
+  "input" : "6126619860",
+  "region" : "FR",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6126619860,
+  "parsedRaw" : "Country Code: 33 National Number: 6126619860"
+}, {
+  "input" : "412-5730-045",
+  "region" : "AU",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4125730045,
+  "parsedRaw" : "Country Code: 61 National Number: 4125730045"
+}, {
+  "input" : "4167411711",
+  "region" : "CA",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "FIXED_LINE_OR_MOBILE",
+  "expectedE164" : "+14167411711",
+  "parsedCountryCode" : 1,
+  "parsedNationalNumber" : 4167411711,
+  "parsedRaw" : "Country Code: 1 National Number: 4167411711"
+}, {
+  "input" : "151-1482-0100",
+  "region" : "DE",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+4915114820100",
+  "parsedCountryCode" : 49,
+  "parsedNationalNumber" : 15114820100,
+  "parsedRaw" : "Country Code: 49 National Number: 15114820100"
+}, {
+  "input" : "01050619919",
+  "region" : "KR",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+821050619919",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 1050619919,
+  "parsedRaw" : "Country Code: 82 National Number: 1050619919"
+}, {
+  "input" : "90-4238-8599",
+  "region" : "JP",
+  "caseType" : "FORMATTED",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+819042388599",
+  "parsedCountryCode" : 81,
+  "parsedNationalNumber" : 9042388599,
+  "parsedRaw" : "Country Code: 81 National Number: 9042388599"
+}, {
+  "input" : "4120856581",
+  "region" : "AU",
+  "caseType" : "VALID",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 4120856581,
+  "parsedRaw" : "Country Code: 61 National Number: 4120856581"
+}, {
+  "input" : "612-5120-865",
+  "region" : "FR",
+  "caseType" : "FORMATTED",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 33,
+  "parsedNationalNumber" : 6125120865,
+  "parsedRaw" : "Country Code: 33 National Number: 6125120865"
+}, {
+  "input" : "01082877036",
+  "region" : "KR",
+  "caseType" : "VALID",
+  "expectedValid" : true,
+  "expectedType" : "MOBILE",
+  "expectedE164" : "+821082877036",
+  "parsedCountryCode" : 82,
+  "parsedNationalNumber" : 1082877036,
+  "parsedRaw" : "Country Code: 82 National Number: 1082877036"
+}, {
+  "input" : "7700707782",
+  "region" : "AU",
+  "caseType" : "MISMATCH",
+  "expectedValid" : false,
+  "expectedType" : null,
+  "expectedE164" : null,
+  "parsedCountryCode" : 61,
+  "parsedNationalNumber" : 7700707782,
+  "parsedRaw" : "Country Code: 61 National Number: 7700707782"
 } ]
