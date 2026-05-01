@@ -43,15 +43,24 @@ jobs:
       # 2️⃣ Slack 알림
       # =========================
       - name: Slack notify (pretty)
-        if: true #env.CHANGED == 'true'
+        if: env.CHANGED == 'true'
         run: |
-          DIFF=$(jq -c . build/snapshot/diff.json)
+          # 🔥 요약 정보만 추출
+          COUNT=$(jq '.changes_count' build/snapshot/diff.json)
+
+          SAMPLE=$(jq -c '.changes[:3]' build/snapshot/diff.json)
+
+          PR_URL="${{ github.event.pull_request.html_url }}"
+          if [ -z "$PR_URL" ]; then
+            PR_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          fi
 
           PAYLOAD=$(jq -n \
-            --arg pr "${{ github.event.pull_request.html_url }}" \
+            --arg pr "$PR_URL" \
             --arg repo "${{ github.repository }}" \
             --arg actor "${{ github.actor }}" \
-            --arg diff "$DIFF" \
+            --arg count "$COUNT" \
+            --arg sample "$SAMPLE" \
             '{
               "blocks": [
                 {
@@ -78,6 +87,13 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
+                    "text": "*🔢 변경 개수:* \($count)"
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
                     "text": "*Pull Request:*\n<\($pr)|바로가기>"
                   }
                 },
@@ -88,7 +104,7 @@ jobs:
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "*📊 변경 내용 (diff)*\n``` \($diff) ```"
+                    "text": "*📊 변경 일부 (최대 3개)*\n```json\n\($sample)\n```"
                   }
                 }
               ]
