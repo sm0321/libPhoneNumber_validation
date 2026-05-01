@@ -15,6 +15,7 @@ public class GoldenTest {
     static class TestCase {
         public String input;
         public String region;
+        public String caseType;
 
         public boolean expectedValid;
         public String expectedType;
