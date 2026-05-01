@@ -130,16 +130,16 @@ public class SnapshotTest {
 
             Map<String, Object> prev = prevMap.get(key);
 
-    //        String currJson = mapper.writeValueAsString(row);
-    //        String prevJson = mapper.writeValueAsString(prev);
+            String currJson = mapper.writeValueAsString(row);
+            String prevJson = mapper.writeValueAsString(prev);
 
 
-            if (!row.equals(prev)) {
+            if (!currJson.equals(prevJson)) {
                 changes.add(Map.of(
                         "type", "CHANGED",
                         "key", key,
-                        "before", prev,
-                        "after", row
+                        "before", prevJson,
+                        "after", currJson
                 ));
             }
         }
