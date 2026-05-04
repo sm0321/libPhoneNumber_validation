@@ -25,7 +25,8 @@ jobs:
           java-version: 17
 
       - run: chmod +x gradlew
-      - run: ./gradlew test
+      # GoldenTest는 로컬/전체 빌드에서만 실행하고, CI에서는 스냅샷 회귀만 실행
+      - run: ./gradlew test --tests SnapshotTest
 
       # =========================
       # 1️⃣ diff 읽기
