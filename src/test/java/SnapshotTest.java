@@ -9,6 +9,10 @@ import java.util.*;
 
 public class SnapshotTest {
 
+    /** normalize()와 동일한 키 순서로, 변경된 필드만 after에 담습니다. */
+    private static final List<String> COMPARE_KEYS = List.of(
+            "input", "region", "valid", "type", "e164", "countryCode", "nationalNumber");
+
     ObjectMapper mapper = new ObjectMapper();
     PhoneNumberUtil util = PhoneNumberUtil.getInstance();
 
@@ -91,7 +95,7 @@ public class SnapshotTest {
                 change.put("input", base.get("input"));
                 change.put("region", base.get("region"));
                 change.put("before", base);
-                change.put("after", curr);
+                change.put("after", afterChangedOnly(base, curr));
 
                 changes.add(change);
             }
@@ -106,8 +110,7 @@ public class SnapshotTest {
         Map<String, Object> diff = new LinkedHashMap<>();
         diff.put("total", golden.size());
         diff.put("changes_count", changes.size());
-        diff.put("changes",
-                changes.size() > 50 ? changes.subList(0, 50) : changes);
+        diff.put("changes", changes);
 
         mapper.writerWithDefaultPrettyPrinter()
                 .writeValue(new File(dir, "diff.json"), diff);
@@ -117,6 +120,19 @@ public class SnapshotTest {
         // =========================
         System.out.println("Total: " + golden.size());
         System.out.println("Changed: " + changes.size());
+    }
+
+    private Map<String, Object> afterChangedOnly(Map<String, Object> base,
+                                                 Map<String, Object> curr) {
+        Map<String, String> b = normalize(base);
+        Map<String, String> c = normalize(curr);
+        Map<String, Object> after = new LinkedHashMap<>();
+        for (String key : COMPARE_KEYS) {
+            if (!Objects.equals(b.get(key), c.get(key))) {
+                after.put(key, curr.get(key));
+            }
+        }
+        return after;
     }
 
     // =========================

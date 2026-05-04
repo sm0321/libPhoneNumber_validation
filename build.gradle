@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.googlecode.libphonenumber:libphonenumber:8.11.5'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:9.0.10'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.0'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
 }
@@ -19,6 +19,14 @@ tasks.withType(JavaCompile).configureEach {
 
 application {
     mainClass = 'org.example.Main'
+}
+
+tasks.register('runDatasetGenerator', JavaExec) {
+    group = 'application'
+    description = 'Writes src/test/resources/golden-dataset.json via generator.DatasetGenerator'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'generator.DatasetGenerator'
+    dependsOn classes
 }
 
 test {
