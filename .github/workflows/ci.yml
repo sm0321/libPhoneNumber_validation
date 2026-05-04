@@ -34,7 +34,12 @@ jobs:
       - name: Load diff
         id: diff
         run: |
-          if [ -f build/snapshot/diff.json ]; then
+          if [ ! -f build/snapshot/diff.json ]; then
+            echo "CHANGED=false" >> $GITHUB_ENV
+            exit 0
+          fi
+          count=$(jq -r '.changes_count // 0' build/snapshot/diff.json 2>/dev/null || echo 0)
+          if [ "${count:-0}" -ge 1 ] 2>/dev/null; then
             echo "CHANGED=true" >> $GITHUB_ENV
           else
             echo "CHANGED=false" >> $GITHUB_ENV
