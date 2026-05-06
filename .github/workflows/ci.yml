@@ -82,7 +82,7 @@ jobs:
       # 2️⃣ Slack 알림
       # =========================
       - name: Slack notify (pretty)
-        if: env.CHANGED == 'true'
+        if: true #env.CHANGED == 'true'
         run: |
           # 🔥 요약 정보만 추출
           COUNT=$(jq '.changes_count' build/snapshot/diff.json)
