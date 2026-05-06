@@ -83,6 +83,8 @@ jobs:
       # =========================
       - name: Slack notify (pretty)
         if: true #env.CHANGED == 'true'
+        env:
+          CPS_WEBHOOK_URL: ${{ secrets.CPS_WEBHOOK_URL }}
         run: |
           # 🔥 요약 정보만 추출
           COUNT=$(jq '.changes_count' build/snapshot/diff.json)
@@ -152,6 +154,12 @@ jobs:
           curl -X POST ${{ secrets.SLACK_WEBHOOK_URL }} \
             -H 'Content-type: application/json' \
             --data "$PAYLOAD"
+
+          if [ -n "$CPS_WEBHOOK_URL" ]; then
+            curl -X POST "$CPS_WEBHOOK_URL" \
+              -H 'Content-type: application/json' \
+              --data "$PAYLOAD"
+          fi
       # =========================
       # 3️⃣ PR 생성
       # =========================
