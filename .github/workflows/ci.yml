@@ -80,15 +80,13 @@ jobs:
 
       # =========================
       # 2️⃣ Slack 알림
-      # CPS_WEBHOOK_URL(두 번째 전송) 켜기:
-      #   ① 아래 env: 두 줄 주석 해제
-      #   ② run 블록 맨 아래 CPS curl 주석 해제
+      # CPS_WEBHOOK_URL: CHANGED=true 일 때만 두 번째 전송
       #   + GitHub Secrets에 CPS_WEBHOOK_URL 등록
       # =========================
       - name: Slack notify (pretty)
         if: true #env.CHANGED == 'true'
-        # env:
-        #   CPS_WEBHOOK_URL: ${{ secrets.CPS_WEBHOOK_URL }}
+        env:
+          CPS_WEBHOOK_URL: ${{ secrets.CPS_WEBHOOK_URL }}
         run: |
           # 🔥 요약 정보만 추출
           COUNT=$(jq '.changes_count' build/snapshot/diff.json)
@@ -172,11 +170,11 @@ jobs:
             -H 'Content-type: application/json' \
             --data "$PAYLOAD"
 
-          # if [ -n "$CPS_WEBHOOK_URL" ]; then
-          #   curl -X POST "$CPS_WEBHOOK_URL" \
-          #     -H 'Content-type: application/json' \
-          #     --data "$PAYLOAD"
-          # fi
+          if [ "${CHANGED:-false}" = "true" ] && [ -n "${CPS_WEBHOOK_URL:-}" ]; then
+            curl -X POST "$CPS_WEBHOOK_URL" \
+              -H 'Content-type: application/json' \
+              --data "$PAYLOAD"
+          fi
       # =========================
       # 3️⃣ PR 생성
       # =========================

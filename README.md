@@ -15,7 +15,7 @@
 | **골든 마스터** | `golden-dataset.json`에 저장된 입력·기대 결과와 **현재 라이브러리 출력**이 일치하는지 확인합니다 (`GoldenTest`). |
 | **스냅샷 / 회귀** | 같은 골든 입력에 대해 **현재 버전**의 결과가 바뀌었는지 `diff.json`으로 요약합니다 (`SnapshotTest`). |
 
-CI에서는 부담을 줄이기 위해 **`SnapshotTest`만** 돌리고, 변경이 있으면 Slack·아티팩트·PR 요약 등으로 알립니다.
+CI에서는 부담을 줄이기 위해 **`SnapshotTest`만** 돌리고, 워크플로마다 Slack(기본 웹훅) 알림을 보내며, 스냅샷 변경이 감지되면(`changes_count ≥ 1`) 아티팩트·PR 요약·선택 웹훅(CPS) 등이 이어집니다.
 
 ---
 
@@ -95,11 +95,12 @@ build/snapshot/
 
 ## CI / 시크릿
 
-- **`SLACK_WEBHOOK_URL`** — Slack Incoming Webhook.
+- **`SLACK_WEBHOOK_URL`** — Slack Incoming Webhook. 워크플로의 Slack 스텝에서 동일 페이로드로 전송합니다.
+- **`CPS_WEBHOOK_URL`** (선택) — 두 번째 Incoming Webhook. Actions 시크릿에 등록해 두면, **`changes_count ≥ 1`(스냅샷 변경 감지, `CHANGED=true`)일 때만** 같은 내용이 추가로 전송됩니다. 시크릿이 비어 있으면 CPS 쪽 `curl`은 건너뜁니다.
 
-두 번째 웹훅(`CPS_WEBHOOK_URL`)은 **기본 꺼짐**. 켤 때는 `.github/workflows/ci.yml`의 Slack 스텝 안 **주석 안내(① `env` ② `curl` 블록)** 를 따라 주석 해제하고, Actions 시크릿 `CPS_WEBHOOK_URL`을 등록하면 됩니다.
+Slack 메시지에는 저장소·작성자·변경 개수·샘플이 포함되며, **Pull Request** 링크는 PR 이벤트면 해당 PR로, `push`만 온 경우에는 열린 PR(API 조회, 브랜치 `create-pull-request/patch`) 또는 PR 목록으로 연결되고, **Workflow run**은 이번 Actions 실행으로 따로 둡니다.
 
-워크플로는 `master` 체크아웃 후 `SnapshotTest`를 실행하고, `changes_count ≥ 1`일 때 후속 단계(알림·PR 등)가 이어지도록 구성되어 있습니다. 자세한 분기는 `.github/workflows/ci.yml`을 참고하세요.
+워크플로는 `master` 체크아웃 후 `SnapshotTest`를 실행하고, `changes_count ≥ 1`일 때 아티팩트·PR 생성·(등록 시) CPS 등 후속 단계가 이어지도록 구성되어 있습니다. 자세한 분기는 `.github/workflows/ci.yml`을 참고하세요.
 
 ---
 
