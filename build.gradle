@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.googlecode.libphonenumber:libphonenumber:9.0.10'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.11.5'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.0'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
 }
