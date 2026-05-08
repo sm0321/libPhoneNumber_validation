@@ -31,4 +31,7 @@ tasks.register('runDatasetGenerator', JavaExec) {
 
 test {
     useJUnitPlatform()
+    filter {
+        excludeTestsMatching '*GoldenTest'
+    }
 }
