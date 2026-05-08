@@ -82,13 +82,10 @@ jobs:
       # 2️⃣ Slack 알림
       # CPS_WEBHOOK_URL: CHANGED=true 일 때만 두 번째 전송
       #   + GitHub Secrets에 CPS_WEBHOOK_URL 등록
-      # Dependabot 트리거 시 Actions secrets가 비어 curl URL 누락 → Dependabot secrets에
-      # SLACK_WEBHOOK_URL / CPS_WEBHOOK_URL 동일 값 등록 또는 아래 skip 동작
       # =========================
       - name: Slack notify (pretty)
         if: true #env.CHANGED == 'true'
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           CPS_WEBHOOK_URL: ${{ secrets.CPS_WEBHOOK_URL }}
         run: |
           # 🔥 요약 정보만 추출
@@ -169,11 +166,7 @@ jobs:
               ]
             }')
 
-          if [ -z "${SLACK_WEBHOOK_URL:-}" ]; then
-            echo "Slack skipped: SLACK_WEBHOOK_URL unset (add under Dependabot secrets for Dependabot-triggered runs)"
-            exit 0
-          fi
-          curl -X POST "$SLACK_WEBHOOK_URL" \
+          curl -X POST ${{ secrets.SLACK_WEBHOOK_URL }} \
             -H 'Content-type: application/json' \
             --data "$PAYLOAD"
 
