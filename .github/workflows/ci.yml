@@ -5,6 +5,11 @@ on:
     branches: [ "**" ]
   pull_request:
   workflow_dispatch:
+    inputs:
+      libphonenumber_version:
+        description: 'libphonenumber version to compare against golden data (empty uses build.gradle)'
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -27,7 +32,15 @@ jobs:
 
       - run: chmod +x gradlew
       # GoldenTest는 로컬/전체 빌드에서만 실행하고, CI에서는 스냅샷 회귀만 실행
-      - run: ./gradlew test --tests SnapshotTest
+      - name: Run snapshot test
+        env:
+          LIBPHONENUMBER_VERSION: ${{ inputs.libphonenumber_version }}
+        run: |
+          if [ -n "$LIBPHONENUMBER_VERSION" ]; then
+            ./gradlew test --tests SnapshotTest "-PlibphonenumberVersion=$LIBPHONENUMBER_VERSION"
+          else
+            ./gradlew test --tests SnapshotTest
+          fi
 
       # =========================
       # 1️⃣ diff 읽기
