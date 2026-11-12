@@ -1,4 +1,5 @@
 name: libphonenumber CI
+run-name: ${{ inputs.request_id && format('n8n:{0} libphonenumber:{1}', inputs.request_id, inputs.libphonenumber_version) || github.event.head_commit.message || github.workflow }}
 
 on:
   push:
@@ -8,6 +9,10 @@ on:
     inputs:
       libphonenumber_version:
         description: 'libphonenumber version to compare against golden data (empty uses build.gradle)'
+        required: false
+        type: string
+      request_id:
+        description: 'Correlation ID supplied by n8n'
         required: false
         type: string
 
@@ -63,7 +68,7 @@ jobs:
       # 전체 diff.json (용량 큼) — PR 본문 대신 아티팩트로 보관
       # =========================
       - name: Upload snapshot diff artifact
-        if: env.CHANGED == 'true'
+        if: success() && hashFiles('build/snapshot/diff.json') != ''
         uses: actions/upload-artifact@v4
         with:
           name: snapshot-diff
